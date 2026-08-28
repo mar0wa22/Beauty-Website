@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Remix Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Femora Beauty - About</title>
+</head>
+
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="nav__header">
+
+            <div class="nav__logo">
+
+                <a href="index.html">
+
+                    <h1>
+                        <span style="color:#d17b88;">✨ Femora</span>
+                        <span style="color:#4acfee;">Beauty</span>
+                    </h1>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </div>
+
+        </div>
+
+
+        <ul class="nav__links" id="nav-links">
+
+            <li
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="100">
+
+                <a href="index.html">Home</a>
+
+            </li>
+
+
+            <li
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="200">
+
+                <a href="about.html">About</a>
+
+            </li>
+
+
+            <li
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="300">
+
+                <a href="products.html">Products</a>
+
+            </li>
+
+
+
+
+            <li
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="400">
+
+                <a href="contacts.html">Contact Us</a>
+
+            </li>
+
+ 
+        <!-- SHOP NOW -->
+
+        <li>
+
+            <a href="products.html"
+               class="btn">
+
+                Shop Now
+
+                <span>
+                    <i class="ri-arrow-right-long-line"></i>
+                </span>
+
+            </a>
+
+        </li>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about">
+
+        <div class="about-image">
+
+            <img
+                src="images/1.png"
+                alt="Femora Beauty">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <h1>
+
+                <span style="color:#4acfee;">
+                    About
+                </span>
+
+                <span style="color:#d17b88;">
+                    Femora Beauty
+                </span>
+
+            </h1>
+
+
+            <p>
+                ✨ Welcome to Femora Beauty, where luxury meets
+                everyday elegance. We bring together a handpicked
+                selection of top-tier makeup and radiant skincare
+                from world-class brands designed to care for your
+                skin and highlight your personal flair.
+            </p>
+
+
+            <p>
+                ✨ Femora Beauty offers a collection of premium
+                makeup and skincare products carefully selected
+                from trusted brands around the world.
+            </p>
+
+
+            <button
+                onclick="document.getElementById('why-femora').scrollIntoView({ behavior: 'smooth' })">
+
+                Explore More
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section
+        id="why-femora"
+        class="why-femora">
+
+        <span>
+            WHY CHOOSE US
+        </span>
+
+
+        <h2>
+            Beauty Made For You
+        </h2>
+
+
+        <p>
+
+            At Femora Beauty, we believe that beauty is unique
+            to everyone. We bring you carefully selected products
+            to help you express your style with confidence.
+
+        </p>
+
+
+
+        <div class="features">
+
+
+            <!-- Feature 1 -->
+
+            <div class="feature">
+
+                <i class="ri-star-line"></i>
+
+                <h3>
+                    Premium Quality
+                </h3>
+
+                <p>
+                    Carefully selected beauty products.
+                </p>
+
+            </div>
+
+
+
+            <!-- Feature 2 -->
+
+            <div class="feature">
+
+                <i class="ri-magic-line"></i>
+
+                <h3>
+                    Latest Trends
+                </h3>
+
+                <p>
+                    Discover the newest beauty trends.
+                </p>
+
+            </div>
+
+
+
+            <!-- Feature 3 -->
+
+            <div class="feature">
+
+                <i class="ri-heart-3-line"></i>
+
+                <h3>
+                    Made With Love
+                </h3>
+
+                <p>
+                    Everything you need in one place.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Back To About Button -->
+
+        <button
+            class="back-about-btn"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+
+            <i class="ri-arrow-up-line"></i>
+            Back to About
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- ================= AOS ================= -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+
+        AOS.init({
+            offset: 0
+        });
+
+    </script>
+
+
+
+    <!-- ================= MENU ================= -->
+
+    <script>
+
+        const menuBtn = document.getElementById("menu-btn");
+
+        const navLinks = document.getElementById("nav-links");
+
+
+        menuBtn.addEventListener("click", () => {
+
+            navLinks.classList.toggle("open");
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

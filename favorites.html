@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>Femora Beauty - Favorites</title>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<nav>
+
+    <div class="nav__header">
+
+        <div class="nav__logo">
+
+            <a href="index.html">
+
+                <h1>
+
+                    <span style="color:#d17b88;">
+                        ✨ Femora
+                    </span>
+
+                    <span style="color:#4acfee;">
+                        Beauty
+                    </span>
+
+                </h1>
+
+            </a>
+
+        </div>
+
+
+        <div class="nav__menu__btn"
+             id="menu-btn">
+
+            <i class="ri-menu-3-line"></i>
+
+        </div>
+
+    </div>
+
+
+    <ul class="nav__links"
+        id="nav-links">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="products.html">
+                Products
+            </a>
+        </li>
+
+        <li>
+            <a href="contacts.html">
+                Contact Us
+            </a>
+        </li>
+
+        <li>
+            <a href="favorites.html">
+                <i class="ri-heart-fill"></i>
+                Favorites
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+
+<!-- =========================================
+     FAVORITES
+========================================= -->
+
+<section class="favorites-section">
+
+
+    <div class="favorites-heading">
+
+        <span>
+            YOUR FAVORITES
+        </span>
+
+        <h1>
+            Your Beauty
+            <strong>Favorites</strong>
+        </h1>
+
+        <p>
+            Products you love and want to keep close.
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="favorites-grid"
+        id="favorites-container">
+
+    </div>
+
+
+</section>
+
+
+
+<script>
+
+/* =========================================
+   GET FAVORITES
+========================================= */
+
+let favorites =
+    JSON.parse(
+        localStorage.getItem("femoraFavorites")
+    ) || [];
+
+
+const favoritesContainer =
+    document.getElementById("favorites-container");
+
+
+
+/* =========================================
+   DISPLAY FAVORITES
+========================================= */
+
+function displayFavorites() {
+
+    favoritesContainer.innerHTML = "";
+
+
+    /* ==============================
+       NO FAVORITES
+    ============================== */
+
+    if (favorites.length === 0) {
+
+        favoritesContainer.innerHTML = `
+
+            <div class="empty-favorites">
+
+                <i class="ri-heart-3-line"></i>
+
+                <h2>
+                    No Favorites Yet
+                </h2>
+
+                <p>
+                    You haven't added any products
+                    to your favorites yet.
+                </p>
+
+                <a href="products.html">
+
+                    Explore Products
+
+                    <i class="ri-arrow-right-line"></i>
+
+                </a>
+
+            </div>
+
+        `;
+
+        return;
+    }
+
+
+
+    /* ==============================
+       DISPLAY PRODUCTS
+    ============================== */
+
+    favorites.forEach((product, index) => {
+
+        const card =
+            document.createElement("div");
+
+        card.className =
+            "favorite-card";
+
+
+        card.innerHTML = `
+
+            <div class="favorite-image">
+
+                <img
+                    src="${product.image}"
+                    alt="${product.name}"
+                    onerror="this.src='images/1.png'"
+                >
+
+
+                <button
+                    class="remove-favorite"
+                    data-index="${index}"
+                    title="Remove from favorites">
+
+                    <i class="ri-heart-fill"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="favorite-info">
+
+                <span>
+                    FEMORA BEAUTY
+                </span>
+
+                <h3>
+                    ${product.name}
+                </h3>
+
+                <strong>
+                    $${product.price}.00
+                </strong>
+
+
+                <button
+                    class="remove-button"
+                    data-index="${index}">
+
+                    <i class="ri-delete-bin-line"></i>
+
+                    Remove
+
+                </button>
+
+            </div>
+
+        `;
+
+
+        favoritesContainer.appendChild(card);
+
+    });
+
+
+
+    /* =================================
+       REMOVE USING HEART
+    ================================= */
+
+    document
+        .querySelectorAll(".remove-favorite")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    const index =
+                        Number(this.dataset.index);
+
+
+                    favorites.splice(index, 1);
+
+
+                    localStorage.setItem(
+                        "femoraFavorites",
+                        JSON.stringify(favorites)
+                    );
+
+
+                    displayFavorites();
+
+                }
+            );
+
+        });
+
+
+
+    /* =================================
+       REMOVE USING DELETE BUTTON
+    ================================= */
+
+    document
+        .querySelectorAll(".remove-button")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    const index =
+                        Number(this.dataset.index);
+
+
+                    favorites.splice(index, 1);
+
+
+                    localStorage.setItem(
+                        "femoraFavorites",
+                        JSON.stringify(favorites)
+                    );
+
+
+                    displayFavorites();
+
+                }
+            );
+
+        });
+
+}
+
+
+
+/* =========================================
+   START
+========================================= */
+
+displayFavorites();
+
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+const menuBtn =
+    document.getElementById("menu-btn");
+
+const navLinks =
+    document.getElementById("nav-links");
+
+
+menuBtn.addEventListener("click", () => {
+
+    navLinks.classList.toggle("open");
+
+});
+
+</script>
+
+
+</body>
+
+</html>
