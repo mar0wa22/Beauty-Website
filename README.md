@@ -22,4 +22,7 @@ and boost confidence.
           [Explore More]
 
  <!-- products.html -->     
+ <!-- cart.html -->   
+ <!-- favorite.html -->  
+ <!-- contacts.html -->    
       
