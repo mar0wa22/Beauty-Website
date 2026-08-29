@@ -3,7 +3,7 @@
   "short_name": "FemoraBeauty-Website",
   "icons": [
     {
-      "src": "images/icon.png",
+      "src": "images/icons.png",
       "sizes": "512x512",
       "type": "image/png"
     }
