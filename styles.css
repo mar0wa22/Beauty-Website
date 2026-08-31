@@ -4439,18 +4439,18 @@ body {
 }
 
 .splash-screen {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100vh;
-    background: #F8E1E5;
-    z-index: 99999;
-    overflow: hidden;
+position: fixed;
+inset: 0;
+width: 100vw;
+height: 100vh;
+background: #F8E1E5;
+z-index: 99999;
+overflow: hidden;
 }
 
 .splash-screen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+width: 100%;
+height: 100%;
+object-fit: cover; /* تجعل الصورة تغطي كامل الشاشة بدون تشويه */
+display: block;
 }

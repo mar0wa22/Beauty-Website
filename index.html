@@ -274,7 +274,21 @@
 
   </script>
 
+  <!-- ================= Splash  ================= -->
+<script>
+setTimeout(() => {
+const splash = document.querySelector('.splash-screen');
+if (splash) {
+splash.style.transition = 'opacity 0.5s ease';
+splash.style.opacity = '0';
 
+setTimeout(() => {
+splash.style.display = 'none';
+}, 500);
+}
+}, 2000); // 2000 مللي ثانية = ثانيتان
+});
+</script>
   <!-- ================= TRANSLATION ================= -->
 
   <script src="translations.js"></script>
