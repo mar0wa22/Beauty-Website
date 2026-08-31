@@ -5,13 +5,24 @@
 
 const translations = {
 
+    /* =====================================
+       ENGLISH
+    ===================================== */
+
     en: {
+
+        /* NAVBAR */
 
         home: "Home",
         about: "About",
         products: "Products",
         contact: "Contact Us",
         shopNow: "Shop Now",
+
+        language: "AR",
+
+
+        /* HOME */
 
         homeTitle:
         "Discover the Beauty within you",
@@ -29,18 +40,92 @@ const translations = {
         "Opening Date",
 
         datePlaceholder:
-        "3th, March 2024"
+        "3th, March 2024",
+
+
+        /* =================================
+           ABOUT
+        ================================= */
+
+        aboutTitle:
+        "About",
+
+        femoraBeauty:
+        "Femora Beauty",
+
+        aboutText1:
+        "✨ Welcome to Femora Beauty, where luxury meets everyday elegance. We bring together a handpicked selection of top-tier makeup and radiant skincare from world-class brands designed to care for your skin and highlight your personal flair.",
+
+        aboutText2:
+        "✨ Femora Beauty offers a collection of premium makeup and skincare products carefully selected from trusted brands around the world.",
+
+        exploreMore:
+        "Explore More",
+
+
+        /* WHY FEMORA */
+
+        whyChooseUs:
+        "WHY CHOOSE US",
+
+        beautyMadeForYou:
+        "Beauty Made For You",
+
+        whyDescription:
+        "At Femora Beauty, we believe that beauty is unique to everyone. We bring you carefully selected products to help you express your style with confidence.",
+
+        premiumQuality:
+        "Premium Quality",
+
+        premiumDescription:
+        "Carefully selected beauty products.",
+
+        latestTrends:
+        "Latest Trends",
+
+        trendsDescription:
+        "Discover the newest beauty trends.",
+
+        madeWithLove:
+        "Made With Love",
+
+        loveDescription:
+        "Everything you need in one place.",
+
+        backToAbout:
+        "Back to About"
 
     },
 
 
+    /* =====================================
+       ARABIC
+    ===================================== */
+
     ar: {
 
-        home: "الرئيسية",
-        about: "من نحن",
-        products: "المنتجات",
-        contact: "تواصل معنا",
-        shopNow: "تسوقي الآن",
+        /* NAVBAR */
+
+        home:
+        "الرئيسية",
+
+        about:
+        "من نحن",
+
+        products:
+        "المنتجات",
+
+        contact:
+        "تواصل معنا",
+
+        shopNow:
+        "تسوقي الآن",
+
+        language:
+        "EN",
+
+
+        /* HOME */
 
         homeTitle:
         "اكتشفي الجمال بداخلك",
@@ -58,11 +143,65 @@ const translations = {
         "تاريخ الافتتاح",
 
         datePlaceholder:
-        "3 مارس 2024"
+        "3 مارس 2024",
+
+
+        /* =================================
+           ABOUT
+        ================================= */
+
+        aboutTitle:
+        "عن",
+
+        femoraBeauty:
+        "فيمورا بيوتي",
+
+        aboutText1:
+        "✨ مرحبًا بكِ في فيمورا بيوتي، حيث تلتقي الفخامة بالأناقة اليومية. نقدم لكِ مجموعة مختارة بعناية من أفضل مستحضرات المكياج ومنتجات العناية بالبشرة المشرقة من علامات تجارية عالمية، صُممت للعناية ببشرتك وإبراز جمالكِ الخاص.",
+
+        aboutText2:
+        "✨ تقدم فيمورا بيوتي مجموعة من منتجات المكياج والعناية بالبشرة الفاخرة، تم اختيارها بعناية من علامات تجارية موثوقة حول العالم.",
+
+        exploreMore:
+        "اكتشفي المزيد",
+
+
+        /* WHY FEMORA */
+
+        whyChooseUs:
+        "لماذا تختاريننا؟",
+
+        beautyMadeForYou:
+        "جمال صُمم من أجلكِ",
+
+        whyDescription:
+        "في فيمورا بيوتي، نؤمن بأن الجمال يختلف من شخص لآخر. لذلك نقدم لكِ منتجات مختارة بعناية تساعدكِ على التعبير عن أسلوبكِ بثقة.",
+
+        premiumQuality:
+        "جودة فائقة",
+
+        premiumDescription:
+        "منتجات تجميل مختارة بعناية.",
+
+        latestTrends:
+        "أحدث الصيحات",
+
+        trendsDescription:
+        "اكتشفي أحدث صيحات الجمال.",
+
+        madeWithLove:
+        "صُنع بحب",
+
+        loveDescription:
+        "كل ما تحتاجينه في مكان واحد.",
+
+        backToAbout:
+        "العودة إلى صفحة من نحن"
 
     }
 
 };
+
 
 /* =========================================
    GET SAVED LANGUAGE
@@ -77,6 +216,10 @@ let currentLanguage =
 ========================================= */
 
 function translatePage() {
+
+    /* ==============================
+       NORMAL TEXT
+    ============================== */
 
     const elements =
         document.querySelectorAll("[data-i18n]");
@@ -133,12 +276,16 @@ function translatePage() {
 
 
     /* ==============================
-       HTML DIRECTION
+       HTML LANGUAGE
     ============================== */
 
     document.documentElement.lang =
         currentLanguage;
 
+
+    /* ==============================
+       RTL / LTR
+    ============================== */
 
     document.documentElement.dir =
         currentLanguage === "ar"

@@ -2,21 +2,35 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/png" href="images/icons.png">
-<link rel="apple-touch-icon" href="images/icons.png">
-<link rel="manifest" href="manifest.json">
-    <!-- Remix Icons -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+          href="styles.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon"
+          type="image/png"
+          href="images/icons.png">
+
+    <link rel="apple-touch-icon"
+          href="images/icons.png">
+
+    <link rel="manifest"
+          href="manifest.json">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
@@ -26,98 +40,135 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- AOS Animation -->
-    <link rel="stylesheet"
-        href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@next/dist/aos.css">
 
     <title>Femora Beauty - About</title>
+
 </head>
 
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
 
-    <nav>
+<!-- ================= NAVBAR ================= -->
 
-        <div class="nav__header">
+<nav>
 
-            <div class="nav__logo">
+    <div class="nav__header">
 
-                <a href="index.html">
+        <div class="nav__logo">
 
-                    <h1>
-                        <span style="color:#d17b88;">✨ Femora</span>
-                        <span style="color:#4acfee;">Beauty</span>
-                    </h1>
+            <a href="index.html">
 
-                </a>
+                <h1>
 
-            </div>
+                    <span style="color:#d17b88;">
+                        ✨ Femora
+                    </span>
 
+                    <span style="color:#4acfee;">
+                        Beauty
+                    </span>
 
-            <div class="nav__menu__btn" id="menu-btn">
-                <i class="ri-menu-3-line"></i>
-            </div>
+                </h1>
+
+            </a>
 
         </div>
 
 
-        <ul class="nav__links" id="nav-links">
+        <div class="nav__menu__btn"
+             id="menu-btn">
 
-            <li
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="100">
+            <i class="ri-menu-3-line"></i>
 
-                <a href="index.html">Home</a>
+        </div>
 
-            </li>
+    </div>
 
 
-            <li
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="200">
-
-                <a href="about.html">About</a>
-
-            </li>
+    <ul class="nav__links"
+        id="nav-links">
 
 
-            <li
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="300">
+        <li
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="100">
 
-                <a href="products.html">Products</a>
+            <a href="index.html"
+               data-translate="nav_home">
 
-            </li>
+                Home
+
+            </a>
+
+        </li>
 
 
+        <li
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="200">
+
+            <a href="about.html"
+               data-translate="nav_about">
+
+                About
+
+            </a>
+
+        </li>
 
 
-            <li
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="400">
+        <li
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300">
 
-                <a href="contacts.html">Contact Us</a>
+            <a href="products.html"
+               data-translate="nav_products">
 
-            </li>
+                Products
 
- <li class="language-item">
+            </a>
 
-    <button
-        id="language-toggle"
-        class="language-toggle"
-        onclick="toggleLanguage()">
+        </li>
 
-        AR
 
-    </button>
+        <li
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="400">
 
-</li>
+            <a href="contacts.html"
+               data-translate="nav_contact">
+
+                Contact Us
+
+            </a>
+
+        </li>
+
+
+        <!-- LANGUAGE -->
+
+        <li class="language-item">
+
+            <button
+                id="language-toggle"
+                class="language-toggle"
+                onclick="toggleLanguage()">
+
+                AR
+
+            </button>
+
+        </li>
+
+
         <!-- SHOP NOW -->
 
         <li>
@@ -125,212 +176,265 @@
             <a href="products.html"
                class="btn">
 
-                Shop Now
+                <span data-translate="shop_now">
+                    Shop Now
+                </span>
 
                 <span>
+
                     <i class="ri-arrow-right-long-line"></i>
+
                 </span>
 
             </a>
 
         </li>
-        </ul>
 
-    </nav>
+    </ul>
 
-
-
-    <!-- ================= ABOUT SECTION ================= -->
-
-    <section class="about">
-
-        <div class="about-image">
-
-            <img
-                src="images/1.png"
-                alt="Femora Beauty">
-
-        </div>
-
-
-        <div class="about-content">
-
-            <h1>
-
-                <span style="color:#4acfee;">
-                    About
-                </span>
-
-                <span style="color:#d17b88;">
-                    Femora Beauty
-                </span>
-
-            </h1>
-
-
-            <p>
-                ✨ Welcome to Femora Beauty, where luxury meets
-                everyday elegance. We bring together a handpicked
-                selection of top-tier makeup and radiant skincare
-                from world-class brands designed to care for your
-                skin and highlight your personal flair.
-            </p>
-
-
-            <p>
-                ✨ Femora Beauty offers a collection of premium
-                makeup and skincare products carefully selected
-                from trusted brands around the world.
-            </p>
-
-
-            <button
-                onclick="document.getElementById('why-femora').scrollIntoView({ behavior: 'smooth' })">
-
-                Explore More
-
-            </button>
-
-        </div>
-
-    </section>
+</nav>
 
 
 
-    <!-- ================= WHY CHOOSE US ================= -->
+<!-- ================= ABOUT ================= -->
 
-    <section
-        id="why-femora"
-        class="why-femora">
-
-        <span>
-            WHY CHOOSE US
-        </span>
+<section class="about">
 
 
-        <h2>
-            Beauty Made For You
-        </h2>
+    <div class="about-image">
+
+        <img
+            src="images/1.png"
+            alt="Femora Beauty">
+
+    </div>
 
 
-        <p>
 
-            At Femora Beauty, we believe that beauty is unique
-            to everyone. We bring you carefully selected products
-            to help you express your style with confidence.
+    <div class="about-content">
+
+
+        <h1>
+
+            <span style="color:#4acfee;"
+                  data-translate="about_word">
+
+                About
+
+            </span>
+
+            <span style="color:#d17b88;"
+                  data-translate="femora_beauty">
+
+                Femora Beauty
+
+            </span>
+
+        </h1>
+
+
+
+        <p data-translate="about_text_1">
+
+            ✨ Welcome to Femora Beauty, where luxury meets
+            everyday elegance. We bring together a handpicked
+            selection of top-tier makeup and radiant skincare
+            from world-class brands designed to care for your
+            skin and highlight your personal flair.
 
         </p>
 
 
 
-        <div class="features">
+        <p data-translate="about_text_2">
 
+            ✨ Femora Beauty offers a collection of premium
+            makeup and skincare products carefully selected
+            from trusted brands around the world.
 
-            <!-- Feature 1 -->
-
-            <div class="feature">
-
-                <i class="ri-star-line"></i>
-
-                <h3>
-                    Premium Quality
-                </h3>
-
-                <p>
-                    Carefully selected beauty products.
-                </p>
-
-            </div>
+        </p>
 
 
 
-            <!-- Feature 2 -->
+        <button
+            onclick="document.getElementById('why-femora').scrollIntoView({ behavior: 'smooth' })"
+            data-translate="explore_more">
 
-            <div class="feature">
+            Explore More
 
-                <i class="ri-magic-line"></i>
+        </button>
 
-                <h3>
-                    Latest Trends
-                </h3>
 
-                <p>
-                    Discover the newest beauty trends.
-                </p>
+    </div>
 
-            </div>
+</section>
 
 
 
-            <!-- Feature 3 -->
+<!-- ================= WHY FEMORA ================= -->
 
-            <div class="feature">
+<section
+    id="why-femora"
+    class="why-femora">
 
-                <i class="ri-heart-3-line"></i>
 
-                <h3>
-                    Made With Love
-                </h3>
+    <span data-translate="why_choose_us">
 
-                <p>
-                    Everything you need in one place.
-                </p>
+        WHY CHOOSE US
 
-            </div>
+    </span>
 
+
+
+    <h2 data-translate="beauty_made_for_you">
+
+        Beauty Made For You
+
+    </h2>
+
+
+
+    <p data-translate="why_description">
+
+        At Femora Beauty, we believe that beauty is unique
+        to everyone. We bring you carefully selected products
+        to help you express your style with confidence.
+
+    </p>
+
+
+
+    <div class="features">
+
+
+        <!-- FEATURE 1 -->
+
+        <div class="feature">
+
+            <i class="ri-star-line"></i>
+
+            <h3 data-translate="premium_quality">
+
+                Premium Quality
+
+            </h3>
+
+            <p data-translate="premium_description">
+
+                Carefully selected beauty products.
+
+            </p>
 
         </div>
 
 
 
-        <!-- Back To About Button -->
+        <!-- FEATURE 2 -->
 
-        <button
-            class="back-about-btn"
-            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <div class="feature">
 
-            <i class="ri-arrow-up-line"></i>
+            <i class="ri-magic-line"></i>
+
+            <h3 data-translate="latest_trends">
+
+                Latest Trends
+
+            </h3>
+
+            <p data-translate="trends_description">
+
+                Discover the newest beauty trends.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- FEATURE 3 -->
+
+        <div class="feature">
+
+            <i class="ri-heart-3-line"></i>
+
+            <h3 data-translate="made_with_love">
+
+                Made With Love
+
+            </h3>
+
+            <p data-translate="love_description">
+
+                Everything you need in one place.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- BACK TO ABOUT -->
+
+    <button
+        class="back-about-btn"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+
+        <i class="ri-arrow-up-line"></i>
+
+        <span data-translate="back_to_about">
             Back to About
+        </span>
 
-        </button>
-
-
-    </section>
+    </button>
 
 
-
-    <!-- ================= AOS ================= -->
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script>
-
-        AOS.init({
-            offset: 0
-        });
-
-    </script>
+</section>
 
 
 
-    <!-- ================= MENU ================= -->
+<!-- ================= AOS ================= -->
 
-    <script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-        const menuBtn = document.getElementById("menu-btn");
+<script>
 
-        const navLinks = document.getElementById("nav-links");
+AOS.init({
+    offset: 0
+});
+
+</script>
 
 
-        menuBtn.addEventListener("click", () => {
 
-            navLinks.classList.toggle("open");
+<!-- ================= MENU ================= -->
 
-        });
+<script>
 
-    </script>
+const menuBtn =
+    document.getElementById("menu-btn");
+
+const navLinks =
+    document.getElementById("nav-links");
+
+
+menuBtn.addEventListener("click", () => {
+
+    navLinks.classList.toggle("open");
+
+});
+
+</script>
+
+
+
+<!-- ================= TRANSLATIONS ================= -->
 
 <script src="translations.js"></script>
+
+
 </body>
 
 </html>
