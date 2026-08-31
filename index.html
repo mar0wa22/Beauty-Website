@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="styles.css">
- <link rel="icon" type="image/png" href="images/icons.png">
-<link rel="apple-touch-icon" href="images/icons.png">
-<link rel="manifest" href="manifest.json">
+
+  <link rel="icon" type="image/png" href="images/icons.png">
+  <link rel="apple-touch-icon" href="images/icons.png">
+  <link rel="manifest" href="manifest.json">
+
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
@@ -32,11 +34,13 @@
     href="https://unpkg.com/aos@next/dist/aos.css"
   />
 
+  <title>Femora Beauty</title>
 
-  <title></title>
 </head>
 
+
 <body>
+
 
   <!-- ================= NAVBAR ================= -->
 
@@ -57,8 +61,11 @@
 
       </div>
 
+
       <div class="nav__menu__btn" id="menu-btn">
+
         <i class="ri-menu-3-line"></i>
+
       </div>
 
     </div>
@@ -66,56 +73,128 @@
 
     <ul class="nav__links" id="nav-links">
 
-      <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-        <a href="index.html">Home</a>
+
+      <!-- HOME -->
+
+      <li
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="100"
+      >
+
+        <a href="index.html"
+           data-i18n="home">
+
+          Home
+
+        </a>
+
       </li>
 
-      <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-        <a href="about.html">About</a>
+
+      <!-- ABOUT -->
+
+      <li
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="200"
+      >
+
+        <a href="about.html"
+           data-i18n="about">
+
+          About
+
+        </a>
+
       </li>
 
-      <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-        <a href="products.html">Products</a>
+
+      <!-- PRODUCTS -->
+
+      <li
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+      >
+
+        <a href="products.html"
+           data-i18n="products">
+
+          Products
+
+        </a>
+
       </li>
 
-      <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-        <a href="contacts.html">Contact Us</a>
+
+      <!-- CONTACT -->
+
+      <li
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="400"
+      >
+
+        <a href="contacts.html"
+           data-i18n="contact">
+
+          Contact Us
+
+        </a>
+
       </li>
 
-<li class="language-item">
 
-    <button
-        id="language-toggle"
-        class="language-toggle"
-        onclick="toggleLanguage()">
+      <!-- LANGUAGE -->
 
-        AR
+      <li class="language-item">
 
-    </button>
+        <button
+          id="language-toggle"
+          class="language-toggle"
+          onclick="toggleLanguage()"
+        >
 
-</li>
+          AR
 
+        </button>
+
+      </li>
 
 
       <!-- SHOP NOW -->
 
-      <li data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
+      <li
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        data-aos-delay="500"
+      >
 
-        <a href="products.html" class="btn">
+        <a
+          href="products.html"
+          class="btn"
+        >
 
-          Shop Now
+          <span data-i18n="shopNow">
+            Shop Now
+          </span>
 
           <span>
+
             <i class="ri-arrow-right-long-line"></i>
+
           </span>
 
         </a>
 
       </li>
 
+
     </ul>
 
   </nav>
+
 
 
   <!-- ================= HOME ================= -->
@@ -125,11 +204,18 @@
     id="home"
   >
 
+
     <!-- Decorative Image -->
 
     <div class="decore">
-      <img src="images/Decore.png" alt="Decoration">
+
+      <img
+        src="images/Decore.png"
+        alt="Decoration"
+      >
+
     </div>
+
 
 
     <!-- Main Image -->
@@ -148,30 +234,46 @@
     </div>
 
 
+
     <!-- Content -->
 
     <div class="header__content">
+
+
+      <!-- TITLE -->
 
       <h1
         data-aos="fade-right"
         data-aos-duration="1500"
         data-aos-delay="700"
+        data-i18n="homeTitle"
       >
+
         Discover the Beauty within you
+
       </h1>
 
+
+
+      <!-- DESCRIPTION -->
 
       <p
         class="section__description"
         data-aos="flip-up"
         data-aos-duration="1500"
         data-aos-delay="900"
+        data-i18n="homeDescription"
       >
+
         Femora Beauty offers a wide range of premium makeup and skincare
         products designed to enhance your beauty. Explore the latest
         collections and discover the perfect products for your unique style 💄
+
       </p>
 
+
+
+      <!-- FORM -->
 
       <form
         action="/"
@@ -180,80 +282,118 @@
         data-aos-delay="1100"
       >
 
+
+        <!-- LOCATION -->
+
         <div class="input__group">
 
           <label for="location">
 
             <span>
+
               <i class="ri-map-pin-line"></i>
+
             </span>
 
-            Location
+            <span data-i18n="location">
+              Location
+            </span>
 
           </label>
+
 
           <input
             type="text"
             id="location"
             name="location"
             placeholder="Haddah, Almadinah"
+            data-i18n-placeholder="locationPlaceholder"
           />
 
         </div>
 
+
+
+        <!-- OPENING DATE -->
 
         <div class="input__group">
 
           <label for="date">
 
             <span>
+
               <i class="ri-calendar-line"></i>
+
             </span>
 
-            Opening Date
+            <span data-i18n="openingDate">
+              Opening Date
+            </span>
 
           </label>
+
 
           <input
             type="text"
             id="date"
             name="date"
             placeholder="3th, March 2024"
+            data-i18n-placeholder="datePlaceholder"
           />
 
         </div>
 
+
       </form>
+
 
     </div>
 
   </header>
 
 
+
   <!-- ================= AOS ================= -->
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+
   <script>
+
     AOS.init({
       offset: 0
     });
+
   </script>
+
 
 
   <!-- ================= MENU ================= -->
 
   <script>
 
-    const menuBtn = document.getElementById("menu-btn");
-    const navLinks = document.getElementById("nav-links");
+    const menuBtn =
+      document.getElementById("menu-btn");
+
+    const navLinks =
+      document.getElementById("nav-links");
+
 
     menuBtn.addEventListener("click", () => {
+
       navLinks.classList.toggle("open");
+
     });
 
   </script>
-<script src="translations.js"></script>
+
+
+
+  <!-- ================= TRANSLATION ================= -->
+
+  <script src="translations.js"></script>
+
+
 </body>
 
 </html>

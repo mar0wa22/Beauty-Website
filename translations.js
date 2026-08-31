@@ -7,65 +7,62 @@ const translations = {
 
     en: {
 
-        // Navbar
         home: "Home",
         about: "About",
         products: "Products",
         contact: "Contact Us",
-        favorites: "Favorites",
-        cart: "Cart",
         shopNow: "Shop Now",
 
-        // Common
-        exploreProducts: "Explore Products",
-        exploreMore: "Explore More",
-        learnMore: "Learn More",
-        readMore: "Read More",
-        viewAll: "View All",
+        homeTitle:
+        "Discover the Beauty within you",
 
-        // Buttons
-        addToCart: "Add to Cart",
-        remove: "Remove",
-        continueShopping: "Continue Shopping",
-        proceedCheckout: "Proceed To Checkout",
-        sendMessage: "Send Message",
+        homeDescription:
+        "Femora Beauty offers a wide range of premium makeup and skincare products designed to enhance your beauty. Explore the latest collections and discover the perfect products for your unique style 💄",
 
-        // Language
-        language: "AR"
+        location:
+        "Location",
+
+        locationPlaceholder:
+        "Haddah, Almadinah",
+
+        openingDate:
+        "Opening Date",
+
+        datePlaceholder:
+        "3th, March 2024"
+
     },
 
 
     ar: {
 
-        // Navbar
         home: "الرئيسية",
         about: "من نحن",
         products: "المنتجات",
         contact: "تواصل معنا",
-        favorites: "المفضلة",
-        cart: "السلة",
         shopNow: "تسوقي الآن",
 
-        // Common
-        exploreProducts: "استكشفي المنتجات",
-        exploreMore: "اكتشفي المزيد",
-        learnMore: "اعرفي المزيد",
-        readMore: "اقرئي المزيد",
-        viewAll: "عرض الكل",
+        homeTitle:
+        "اكتشفي الجمال بداخلك",
 
-        // Buttons
-        addToCart: "أضيفي إلى السلة",
-        remove: "إزالة",
-        continueShopping: "متابعة التسوق",
-        proceedCheckout: "إتمام الطلب",
-        sendMessage: "إرسال الرسالة",
+        homeDescription:
+        "تقدم فيمورا بيوتي مجموعة واسعة من منتجات المكياج والعناية بالبشرة الفاخرة المصممة لتعزيز جمالك. استكشفي أحدث مجموعاتنا واكتشفي المنتجات المثالية التي تناسب أسلوبك الفريد 💄",
 
-        // Language
-        language: "EN"
+        location:
+        "الموقع",
+
+        locationPlaceholder:
+        "حدة، المدينة",
+
+        openingDate:
+        "تاريخ الافتتاح",
+
+        datePlaceholder:
+        "3 مارس 2024"
+
     }
 
 };
-
 
 /* =========================================
    GET SAVED LANGUAGE
