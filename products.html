@@ -8,12 +8,16 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/png" href="images/icons.png">
-<link rel="apple-touch-icon" href="images/icons.png">
-<link rel="manifest" href="manifest.json">
+
+    <link rel="icon" type="image/png" href="images/icons.png">
+    <link rel="apple-touch-icon" href="images/icons.png">
+    <link rel="manifest" href="manifest.json">
+
     <!-- Remix Icons -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    >
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +25,14 @@
 
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    >
 
     <!-- AOS -->
-    <link rel="stylesheet"
-        href="https://unpkg.com/aos@next/dist/aos.css">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@next/dist/aos.css"
+    >
 
     <title>Femora Beauty - Products</title>
 
@@ -68,30 +75,46 @@
 
     <ul class="nav__links" id="nav-links">
 
+        <!-- HOME -->
         <li>
-            <a href="index.html">Home</a>
+            <a href="index.html" data-i18n="home">
+                Home
+            </a>
         </li>
 
+
+        <!-- ABOUT -->
         <li>
-            <a href="about.html">About</a>
+            <a href="about.html" data-i18n="about">
+                About
+            </a>
         </li>
 
+
+        <!-- PRODUCTS -->
         <li>
-            <a href="products.html">Products</a>
+            <a href="products.html" data-i18n="products">
+                Products
+            </a>
         </li>
 
+
+        <!-- CONTACT -->
         <li>
-            <a href="contacts.html">Contact Us</a>
+            <a href="contacts.html" data-i18n="contact">
+                Contact Us
+            </a>
         </li>
 
 
         <!-- FAVORITES -->
-
         <li class="nav-icon-item">
 
-            <a href="favorites.html"
-               class="nav-action-btn"
-               title="Favorites">
+            <a
+                href="favorites.html"
+                class="nav-action-btn"
+                title="Favorites"
+            >
 
                 <i class="ri-heart-3-line"></i>
 
@@ -103,12 +126,13 @@
 
 
         <!-- CART -->
-
         <li class="nav-icon-item">
 
-            <a href="cart.html"
-               class="nav-action-btn"
-               title="Shopping Cart">
+            <a
+                href="cart.html"
+                class="nav-action-btn"
+                title="Shopping Cart"
+            >
 
                 <i class="ri-shopping-bag-3-line"></i>
 
@@ -118,25 +142,29 @@
 
         </li>
 
-<li class="language-item">
 
-    <button
-        id="language-toggle"
-        class="language-toggle"
-        onclick="toggleLanguage()">
+        <!-- LANGUAGE -->
+        <li class="language-item">
 
-        AR
+            <button
+                id="language-toggle"
+                class="language-toggle"
+                onclick="toggleLanguage()"
+            >
+                AR
+            </button>
 
-    </button>
+        </li>
 
-</li>
 
         <!-- SHOP NOW -->
-
         <li>
 
-            <a href="#featured-products"
-               class="btn">
+            <a
+                href="#featured-products"
+                class="btn"
+                data-i18n="shopNow"
+            >
 
                 Shop Now
 
@@ -152,8 +180,6 @@
 
 </nav>
 
-
-
 <!-- =====================================================
      PRODUCTS HERO
 ===================================================== -->
@@ -161,27 +187,32 @@
 <section class="products-hero">
 
 
-    <div class="products-hero-content"
-         data-aos="fade-right"
-         data-aos-duration="1500">
+    <div
+        class="products-hero-content"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+    >
 
-        <span class="products-small-title">
+        <span
+            class="products-small-title"
+            data-i18n="productsHeroSmallTitle"
+        >
             FEMORA BEAUTY COLLECTION
         </span>
 
 
-        <h1>
+        <h1 data-i18n="productsHeroTitle">
 
             Discover Your
 
-            <span>
+            <span data-i18n="productsHeroTitleBeauty">
                 Beauty
             </span>
 
         </h1>
 
 
-        <p>
+        <p data-i18n="productsHeroDescription">
 
             Explore our carefully selected collection of
             premium makeup and skincare products designed
@@ -192,9 +223,15 @@
 
         <div class="products-hero-buttons">
 
-            <a href="#featured-products"
-               class="products-main-btn"
-               data-filter="all">
+
+            <!-- EXPLORE PRODUCTS -->
+
+            <a
+                href="#featured-products"
+                class="products-main-btn"
+                data-filter="all"
+                data-i18n="exploreProducts"
+            >
 
                 Explore Products
 
@@ -203,8 +240,13 @@
             </a>
 
 
-            <a href="#categories"
-               class="products-outline-btn">
+            <!-- VIEW CATEGORIES -->
+
+            <a
+                href="#categories"
+                class="products-outline-btn"
+                data-i18n="viewCategories"
+            >
 
                 View Categories
 
@@ -216,41 +258,49 @@
 
 
 
-    <div class="products-hero-image"
-         data-aos="zoom-in"
-         data-aos-duration="1800">
+    <div
+        class="products-hero-image"
+        data-aos="zoom-in"
+        data-aos-duration="1800"
+    >
 
         <div class="hero-circle"></div>
 
-        <img src="images/products page/1.png"
-             alt="Femora Beauty Products">
+        <img
+            src="images/products page/1.png"
+            alt="Femora Beauty Products"
+        >
 
     </div>
 
 </section>
 
-
-
 <!-- =====================================================
      CATEGORIES
 ===================================================== -->
 
-<section class="product-categories"
-         id="categories">
+<section
+    class="product-categories"
+    id="categories"
+>
 
 
-    <div class="products-section-heading"
-         data-aos="fade-up">
+    <div
+        class="products-section-heading"
+        data-aos="fade-up"
+    >
 
-        <span>
+        <span data-i18n="shopByCategory">
             SHOP BY CATEGORY
         </span>
 
-        <h2>
+
+        <h2 data-i18n="findBeautyEssentials">
             Find Your Beauty Essentials
         </h2>
 
-        <p>
+
+        <p data-i18n="beautyRoutineDescription">
             Everything you need to create your perfect
             beauty routine.
         </p>
@@ -262,27 +312,35 @@
     <div class="category-grid">
 
 
-        <!-- MAKEUP -->
+        <!-- ================= MAKEUP ================= -->
 
-        <div class="category-card"
-             data-aos="fade-up"
-             data-aos-delay="100">
+        <div
+            class="category-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+        >
 
             <div class="category-icon">
                 <i class="ri-brush-line"></i>
             </div>
 
-            <h3>
+
+            <h3 data-i18n="makeup">
                 Makeup
             </h3>
 
-            <p>
+
+            <p data-i18n="makeupDescription">
                 Discover your perfect look.
             </p>
 
-            <a href="#featured-products"
-               class="category-explore"
-               data-filter="makeup">
+
+            <a
+                href="#featured-products"
+                class="category-explore"
+                data-filter="makeup"
+                data-i18n="explore"
+            >
 
                 Explore
 
@@ -294,27 +352,35 @@
 
 
 
-        <!-- SKINCARE -->
+        <!-- ================= SKINCARE ================= -->
 
-        <div class="category-card"
-             data-aos="fade-up"
-             data-aos-delay="200">
+        <div
+            class="category-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+        >
 
             <div class="category-icon">
                 <i class="ri-heart-3-line"></i>
             </div>
 
-            <h3>
+
+            <h3 data-i18n="skincare">
                 Skincare
             </h3>
 
-            <p>
+
+            <p data-i18n="skincareDescription">
                 Care for your skin every day.
             </p>
 
-            <a href="#featured-products"
-               class="category-explore"
-               data-filter="skincare">
+
+            <a
+                href="#featured-products"
+                class="category-explore"
+                data-filter="skincare"
+                data-i18n="explore"
+            >
 
                 Explore
 
@@ -326,27 +392,35 @@
 
 
 
-        <!-- LIPS -->
+        <!-- ================= LIPS ================= -->
 
-        <div class="category-card"
-             data-aos="fade-up"
-             data-aos-delay="300">
+        <div
+            class="category-card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+        >
 
             <div class="category-icon">
                 <i class="ri-contrast-2-line"></i>
             </div>
 
-            <h3>
+
+            <h3 data-i18n="lips">
                 Lips
             </h3>
 
-            <p>
+
+            <p data-i18n="lipsDescription">
                 Add color and confidence.
             </p>
 
-            <a href="#featured-products"
-               class="category-explore"
-               data-filter="lips">
+
+            <a
+                href="#featured-products"
+                class="category-explore"
+                data-filter="lips"
+                data-i18n="explore"
+            >
 
                 Explore
 
@@ -358,27 +432,35 @@
 
 
 
-        <!-- EYES -->
+        <!-- ================= EYES ================= -->
 
-        <div class="category-card"
-             data-aos="fade-up"
-             data-aos-delay="400">
+        <div
+            class="category-card"
+            data-aos="fade-up"
+            data-aos-delay="400"
+        >
 
             <div class="category-icon">
                 <i class="ri-eye-line"></i>
             </div>
 
-            <h3>
+
+            <h3 data-i18n="eyes">
                 Eyes
             </h3>
 
-            <p>
+
+            <p data-i18n="eyesDescription">
                 Make every look unforgettable.
             </p>
 
-            <a href="#featured-products"
-               class="category-explore"
-               data-filter="eyes">
+
+            <a
+                href="#featured-products"
+                class="category-explore"
+                data-filter="eyes"
+                data-i18n="explore"
+            >
 
                 Explore
 
@@ -390,27 +472,35 @@
 
 
 
-        <!-- FACE -->
+        <!-- ================= FACE ================= -->
 
-        <div class="category-card"
-             data-aos="fade-up"
-             data-aos-delay="500">
+        <div
+            class="category-card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+        >
 
             <div class="category-icon">
                 <i class="ri-sparkling-2-line"></i>
             </div>
 
-            <h3>
+
+            <h3 data-i18n="face">
                 Face
             </h3>
 
-            <p>
+
+            <p data-i18n="faceDescription">
                 Create your perfect finish.
             </p>
 
-            <a href="#featured-products"
-               class="category-explore"
-               data-filter="face">
+
+            <a
+                href="#featured-products"
+                class="category-explore"
+                data-filter="face"
+                data-i18n="explore"
+            >
 
                 Explore
 
@@ -422,27 +512,35 @@
 
 
 
-        <!-- FRAGRANCE -->
+        <!-- ================= FRAGRANCE ================= -->
 
-        <div class="category-card"
-             data-aos="fade-up"
-             data-aos-delay="600">
+        <div
+            class="category-card"
+            data-aos="fade-up"
+            data-aos-delay="600"
+        >
 
             <div class="category-icon">
                 <i class="ri-leaf-line"></i>
             </div>
 
-            <h3>
+
+            <h3 data-i18n="fragrance">
                 Fragrance
             </h3>
 
-            <p>
+
+            <p data-i18n="fragranceDescription">
                 Find your signature scent.
             </p>
 
-            <a href="#featured-products"
-               class="category-explore"
-               data-filter="fragrance">
+
+            <a
+                href="#featured-products"
+                class="category-explore"
+                data-filter="fragrance"
+                data-i18n="explore"
+            >
 
                 Explore
 
@@ -455,1958 +553,5 @@
     </div>
 
 </section>
-
-
-
-<!-- =====================================================
-     FEATURED PRODUCTS
-     ALL 8 PRODUCTS + FILTERS
-===================================================== -->
-
-<section class="featured-products"
-         id="featured-products">
-
-
-    <div class="products-section-heading"
-         data-aos="fade-up">
-
-        <span>
-            FEMORA COLLECTION
-        </span>
-
-        <h2>
-            Our Beauty Favorites
-        </h2>
-
-        <p>
-            Discover our complete collection of beauty
-            essentials and find your perfect match.
-        </p>
-
-    </div>
-
-
-
-    <!-- =================================================
-         FILTERS
-    ================================================= -->
-
-    <div class="products-filter"
-         data-aos="fade-up">
-
-
-        <button class="filter-btn active"
-                data-filter="all">
-
-            All
-
-        </button>
-
-
-        <button class="filter-btn"
-                data-filter="makeup">
-
-            Makeup
-
-        </button>
-
-
-        <button class="filter-btn"
-                data-filter="skincare">
-
-            Skincare
-
-        </button>
-
-
-        <button class="filter-btn"
-                data-filter="lips">
-
-            Lips
-
-        </button>
-
-
-        <button class="filter-btn"
-                data-filter="eyes">
-
-            Eyes
-
-        </button>
-
-
-        <button class="filter-btn"
-                data-filter="face">
-
-            Face
-
-        </button>
-
-
-        <button class="filter-btn"
-                data-filter="fragrance">
-
-            Fragrance
-
-        </button>
-
-    </div>
-
-
-
-    <!-- =================================================
-         PRODUCTS GRID
-    ================================================= -->
-
-    <div class="products-grid">
-
-
-        <!-- =================================================
-             PRODUCT 1 - FACE
-        ================================================= -->
-
-        <div class="product-card"
-             data-aos="fade-up"
-             data-aos-delay="100"
-             data-category="face">
-
-            <div class="product-image">
-
-                <span class="product-badge">
-                    NEW
-                </span>
-
-                <img src="images/Featured Products/product1.png"
-                     alt="Luxury Foundation">
-
-
-                <button class="product-wishlist"
-                        data-name="Luxury Foundation"
-                        data-price="28"
-                        data-image="images/Featured Products/product1.png">
-
-                    <i class="ri-heart-line"></i>
-
-                </button>
-
-            </div>
-
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    FACE
-                </span>
-
-                <h3>
-                    Luxury Foundation
-                </h3>
-
-                <div class="product-rating">
-
-                    <span>★★★★★</span>
-
-                    <small>
-                        (24)
-                    </small>
-
-                </div>
-
-
-                <div class="product-bottom">
-
-                    <strong>
-                        $28.00
-                    </strong>
-
-
-                    <button class="add-cart"
-                            data-name="Luxury Foundation"
-                            data-price="28"
-                            data-image="images/Featured Products/product1.png">
-
-                        <i class="ri-shopping-bag-line"></i>
-
-                        Add
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             PRODUCT 2 - LIPS
-        ================================================= -->
-
-        <div class="product-card"
-             data-aos="fade-up"
-             data-aos-delay="200"
-             data-category="lips">
-
-            <div class="product-image">
-
-                <span class="product-badge">
-                    BEST
-                </span>
-
-                <img src="images/Featured Products/product2.png"
-                     alt="Rose Velvet Lipstick">
-
-
-                <button class="product-wishlist"
-                        data-name="Rose Velvet Lipstick"
-                        data-price="18"
-                        data-image="images/Featured Products/product2.png">
-
-                    <i class="ri-heart-line"></i>
-
-                </button>
-
-            </div>
-
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    LIPS
-                </span>
-
-                <h3>
-                    Rose Velvet Lipstick
-                </h3>
-
-                <div class="product-rating">
-
-                    <span>★★★★★</span>
-
-                    <small>
-                        (38)
-                    </small>
-
-                </div>
-
-
-                <div class="product-bottom">
-
-                    <strong>
-                        $18.00
-                    </strong>
-
-
-                    <button class="add-cart"
-                            data-name="Rose Velvet Lipstick"
-                            data-price="18"
-                            data-image="images/Featured Products/product2.png">
-
-                        <i class="ri-shopping-bag-line"></i>
-
-                        Add
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             PRODUCT 3 - SKINCARE
-        ================================================= -->
-
-        <div class="product-card"
-             data-aos="fade-up"
-             data-aos-delay="300"
-             data-category="skincare">
-
-            <div class="product-image">
-
-                <img src="images/Featured Products/product3.png"
-                     alt="Radiant Glow Serum">
-
-
-                <button class="product-wishlist"
-                        data-name="Radiant Glow Serum"
-                        data-price="32"
-                        data-image="images/Featured Products/product3.png">
-
-                    <i class="ri-heart-line"></i>
-
-                </button>
-
-            </div>
-
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    SKINCARE
-                </span>
-
-                <h3>
-                    Radiant Glow Serum
-                </h3>
-
-                <div class="product-rating">
-
-                    <span>★★★★★</span>
-
-                    <small>
-                        (31)
-                    </small>
-
-                </div>
-
-
-                <div class="product-bottom">
-
-                    <strong>
-                        $32.00
-                    </strong>
-
-
-                    <button class="add-cart"
-                            data-name="Radiant Glow Serum"
-                            data-price="32"
-                            data-image="images/Featured Products/product3.png">
-
-                        <i class="ri-shopping-bag-line"></i>
-
-                        Add
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             PRODUCT 4 - EYES
-        ================================================= -->
-
-        <div class="product-card"
-             data-aos="fade-up"
-             data-aos-delay="400"
-             data-category="eyes">
-
-            <div class="product-image">
-
-                <img src="images/Featured Products/product4.png"
-                     alt="Soft Glam Palette">
-
-
-                <button class="product-wishlist"
-                        data-name="Soft Glam Palette"
-                        data-price="35"
-                        data-image="images/Featured Products/product4.png">
-
-                    <i class="ri-heart-line"></i>
-
-                </button>
-
-            </div>
-
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    EYES
-                </span>
-
-                <h3>
-                    Soft Glam Palette
-                </h3>
-
-                <div class="product-rating">
-
-                    <span>★★★★★</span>
-
-                    <small>
-                        (19)
-                    </small>
-
-                </div>
-
-
-                <div class="product-bottom">
-
-                    <strong>
-                        $35.00
-                    </strong>
-
-
-                    <button class="add-cart"
-                            data-name="Soft Glam Palette"
-                            data-price="35"
-                            data-image="images/Featured Products/product4.png">
-
-                        <i class="ri-shopping-bag-line"></i>
-
-                        Add
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             PRODUCT 5 - MAKEUP
-        ================================================= -->
-
-        <div class="product-card"
-             data-aos="fade-up"
-             data-aos-delay="100"
-             data-category="makeup">
-
-            <div class="product-image">
-
-                <img src="images/Featured Products/product5.png"
-                     alt="Rose Glow Blush">
-
-
-                <button class="product-wishlist"
-                        data-name="Rose Glow Blush"
-                        data-price="22"
-                        data-image="images/Featured Products/product5.png">
-
-                    <i class="ri-heart-line"></i>
-
-                </button>
-
-            </div>
-
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    MAKEUP
-                </span>
-
-                <h3>
-                    Rose Glow Blush
-                </h3>
-
-                <div class="product-rating">
-
-                    <span>★★★★★</span>
-
-                    <small>
-                        (27)
-                    </small>
-
-                </div>
-
-
-                <div class="product-bottom">
-
-                    <strong>
-                        $22.00
-                    </strong>
-
-
-                    <button class="add-cart"
-                            data-name="Rose Glow Blush"
-                            data-price="22"
-                            data-image="images/Featured Products/product5.png">
-
-                        <i class="ri-shopping-bag-line"></i>
-
-                        Add
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             PRODUCT 6 - EYES
-        ================================================= -->
-
-        <div class="product-card"
-             data-aos="fade-up"
-             data-aos-delay="200"
-             data-category="eyes">
-
-            <div class="product-image">
-
-                <img src="images/Featured Products/product6.png"
-                     alt="Volume Mascara">
-
-
-                <button class="product-wishlist"
-                        data-name="Volume Mascara"
-                        data-price="20"
-                        data-image="images/Featured Products/product6.png">
-
-                    <i class="ri-heart-line"></i>
-
-                </button>
-
-            </div>
-
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    EYES
-                </span>
-
-                <h3>
-                    Volume Mascara
-                </h3>
-
-                <div class="product-rating">
-
-                    <span>★★★★★</span>
-
-                    <small>
-                        (21)
-                    </small>
-
-                </div>
-
-
-                <div class="product-bottom">
-
-                    <strong>
-                        $20.00
-                    </strong>
-
-
-                    <button class="add-cart"
-                            data-name="Volume Mascara"
-                            data-price="20"
-                            data-image="images/Featured Products/product6.png">
-
-                        <i class="ri-shopping-bag-line"></i>
-
-                        Add
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-<!-- =================================================
-     PRODUCT 7 - SKINCARE
-================================================= -->
-
-<div class="product-card"
-     data-aos="fade-up"
-     data-aos-delay="300"
-     data-category="skincare">
-
-    <div class="product-image">
-
-        <img src="images/Featured Products/product7.png"
-             alt="Daily Moisturizer">
-
-        <button class="product-wishlist"
-                data-name="Daily Moisturizer"
-                data-price="26"
-                data-image="images/Featured Products/product7.png">
-
-            <i class="ri-heart-line"></i>
-
-        </button>
-
-    </div>
-
-
-    <div class="product-info">
-
-        <span class="product-category">
-            SKINCARE
-        </span>
-
-        <h3>
-            Daily Moisturizer
-        </h3>
-
-        <div class="product-rating">
-
-            <span>★★★★★</span>
-
-            <small>
-                (34)
-            </small>
-
-        </div>
-
-
-        <div class="product-bottom">
-
-            <strong>
-                $26.00
-            </strong>
-
-
-            <button class="add-cart"
-                    data-name="Daily Moisturizer"
-                    data-price="26"
-                    data-image="images/Featured Products/product7.png">
-
-                <i class="ri-shopping-bag-line"></i>
-
-                Add
-
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
-<!-- =================================================
-     PRODUCT 8 - FRAGRANCE
-================================================= -->
-
-<div class="product-card"
-     data-aos="fade-up"
-     data-aos-delay="400"
-     data-category="fragrance">
-
-    <div class="product-image">
-
-        <img src="images/Featured Products/product8.png"
-             alt="Femora Signature">
-
-        <button class="product-wishlist"
-                data-name="Femora Signature"
-                data-price="45"
-                data-image="images/Featured Products/product8.png">
-
-            <i class="ri-heart-line"></i>
-
-        </button>
-
-    </div>
-
-
-    <div class="product-info">
-
-        <span class="product-category">
-            FRAGRANCE
-        </span>
-
-        <h3>
-            Femora Signature
-        </h3>
-
-        <div class="product-rating">
-
-            <span>★★★★★</span>
-
-            <small>
-                (42)
-            </small>
-
-        </div>
-
-
-        <div class="product-bottom">
-
-            <strong>
-                $45.00
-            </strong>
-
-
-            <button class="add-cart"
-                    data-name="Femora Signature"
-                    data-price="45"
-                    data-image="images/Featured Products/product8.png">
-
-                <i class="ri-shopping-bag-line"></i>
-
-                Add
-
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
-<!-- =================================================
-     PRODUCT 9 - FRAGRANCE
-================================================= -->
-
-<div class="product-card"
-     data-aos="fade-up"
-     data-aos-delay="500"
-     data-category="fragrance">
-
-    <div class="product-image">
-  <span class="product-badge">
-                    BEST
-                </span>
-
-        <img src="images/Featured Products/product9.png"
-             alt="Femora Rose Perfume">
-
-        <button class="product-wishlist"
-                data-name="Femora Rose Perfume"
-                data-price="40"
-                data-image="images/Featured Products/product9.png">
-
-            <i class="ri-heart-line"></i>
-
-        </button>
-
-    </div>
-
-
-    <div class="product-info">
-
-        <span class="product-category">
-            FRAGRANCE
-        </span>
-
-        <h3>
-            Femora Rose Perfume
-        </h3>
-
-        <div class="product-rating">
-
-            <span>★★★★</span>
-
-            <small>
-                (36)
-            </small>
-
-        </div>
-
-
-        <div class="product-bottom">
-
-            <strong>
-                $40.00
-            </strong>
-
-
-            <button class="add-cart"
-                    data-name="Femora Rose Perfume"
-                    data-price="40"
-                    data-image="images/Featured Products/product9.png">
-
-                <i class="ri-shopping-bag-line"></i>
-
-                Add
-
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
-<!-- =================================================
-     PRODUCT 10 - MAKEUP
-================================================= -->
-
-<div class="product-card"
-     data-aos="fade-up"
-     data-aos-delay="600"
-     data-category="makeup">
-
-    <div class="product-image">
- <span class="product-badge">
-                    NEW
-                </span>
-
-        <img src="images/Featured Products/product10.png"
-             alt="Red Glow Blush">
-
-        <button class="product-wishlist"
-                data-name="Red Glow Blush"
-                data-price="24"
-                data-image="images/Featured Products/product10.png">
-
-            <i class="ri-heart-line"></i>
-
-        </button>
-
-    </div>
-
-
-    <div class="product-info">
-
-        <span class="product-category">
-            MAKEUP
-        </span>
-
-        <h3>
-            Red Glow Blush
-        </h3>
-
-        <div class="product-rating">
-
-            <span>★★★★★</span>
-
-            <small>
-                (28)
-            </small>
-
-        </div>
-
-
-        <div class="product-bottom">
-
-            <strong>
-                $24.00
-            </strong>
-
-
-            <button class="add-cart"
-                    data-name="Red Glow Blush"
-                    data-price="24"
-                    data-image="images/Featured Products/product10.png">
-
-                <i class="ri-shopping-bag-line"></i>
-
-                Add
-
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-        <!-- =================================================
-             PRODUCT 11 - EYES
-        ================================================= -->
-
-        <div class="product-card"
-             data-aos="fade-up"
-             data-aos-delay="200"
-             data-category="eyes">
-
-            <div class="product-image">
-
-                <img src="images/Featured Products/product11.png"
-                     alt="Neiman Marcurs">
-
-
-                <button class="product-wishlist"
-                        data-name="Neiman Marcurs"
-                        data-price="20"
-                        data-image="images/Featured Products/product11.png">
-
-                    <i class="ri-heart-line"></i>
-
-                </button>
-
-            </div>
-
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    EYES
-                </span>
-
-                <h3>
-                   Neiman Marcurs
-                </h3>
-
-                <div class="product-rating">
-
-                    <span>★★★★★</span>
-
-                    <small>
-                        (19)
-                    </small>
-
-                </div>
-
-
-                <div class="product-bottom">
-
-                    <strong>
-                        $24.00
-                    </strong>
-
-
-                    <button class="add-cart"
-                            data-name="Neiman Marcurs"
-                            data-price="20"
-                            data-image="images/Featured Products/product11.png">
-
-                        <i class="ri-shopping-bag-line"></i>
-
-                        Add
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        
-
-        <!-- =================================================
-             PRODUCT 12 - LIPS
-        ================================================= -->
-
-        <div class="product-card"
-             data-aos="fade-up"
-             data-aos-delay="200"
-             data-category="lips">
-
-            <div class="product-image">
-
-              
-                <img src="images/Featured Products/product12.png"
-                     alt="Red Velvet Lipstick">
-
-
-                <button class="product-wishlist"
-                        data-name="Red Velvet Lipstick"
-                        data-price="18"
-                        data-image="images/Featured Products/product12.png">
-
-                    <i class="ri-heart-line"></i>
-
-                </button>
-
-            </div>
-
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    LIPS
-                </span>
-
-                <h3>
-                    Red Velvet Lipstick
-                </h3>
-
-                <div class="product-rating">
-
-                    <span>★★★★★</span>
-
-                    <small>
-                        (20)
-                    </small>
-
-                </div>
-
-
-                <div class="product-bottom">
-
-                    <strong>
-                        $10.00
-                    </strong>
-
-
-                    <button class="add-cart"
-                            data-name="Rose Velvet Lipstick"
-                            data-price="18"
-                            data-image="images/Featured Products/product12.png">
-
-                        <i class="ri-shopping-bag-line"></i>
-
-                        Add
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    
-        
-        <!-- =================================================
-             PRODUCT 13 - FACE
-        ================================================= -->
-
-        <div class="product-card"
-             data-aos="fade-up"
-             data-aos-delay="100"
-             data-category="face">
-
-            <div class="product-image">
-
-               
-                <img src="images/Featured Products/product13.png"
-                     alt="Luxury Foundation">
-
-
-                <button class="product-wishlist"
-                        data-name="Luxury Foundation"
-                        data-price="28"
-                        data-image="images/Featured Products/product13.png">
-
-                    <i class="ri-heart-line"></i>
-
-                </button>
-
-            </div>
-
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    FACE
-                </span>
-
-                <h3>
-                    Powder Foundation
-                </h3>
-
-                <div class="product-rating">
-
-                    <span>★★★★★</span>
-
-                    <small>
-                        (26)
-                    </small>
-
-                </div>
-
-
-                <div class="product-bottom">
-
-                    <strong>
-                        $26.00
-                    </strong>
-
-
-                    <button class="add-cart"
-                            data-name="Powder Foundation"
-                            data-price="26"
-                            data-image="images/Featured Products/product13.png">
-
-                        <i class="ri-shopping-bag-line"></i>
-
-                        Add
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     BEAUTY OFFER
-===================================================== -->
-
-<section class="beauty-offer">
-
-
-    <div class="offer-content"
-         data-aos="fade-right">
-
-        <span>
-            SPECIAL FEMORA OFFER
-        </span>
-
-        <h2>
-            Your Beauty,
-            <br>
-            Your Confidence.
-        </h2>
-
-        <p>
-
-            Treat yourself to something beautiful.
-            Discover selected products and enjoy
-            an elegant beauty experience made just for you.
-
-        </p>
-
-
-        <a href="#featured-products"
-           class="offer-btn"
-           data-filter="all">
-
-            Explore Collection
-
-            <i class="ri-arrow-right-line"></i>
-
-        </a>
-
-    </div>
-
-
-    <div class="offer-image"
-         data-aos="zoom-in">
-
-        <img src="images/products page/1.png"
-             alt="Femora Beauty Offer">
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     WHY FEMORA
-===================================================== -->
-
-<section class="products-why">
-
-
-    <div class="products-section-heading"
-         data-aos="fade-up">
-
-        <span>
-            THE FEMORA EXPERIENCE
-        </span>
-
-        <h2>
-            Beauty Made With Care
-        </h2>
-
-    </div>
-
-
-
-    <div class="products-benefits">
-
-
-        <!-- BENEFIT 1 -->
-
-        <div class="products-benefit"
-             data-aos="fade-up">
-
-            <i class="ri-award-line"></i>
-
-            <h3>
-                Premium Quality
-            </h3>
-
-            <p>
-                Carefully selected products from
-                trusted beauty brands.
-            </p>
-
-        </div>
-
-
-
-        <!-- BENEFIT 2 -->
-
-        <div class="products-benefit"
-             data-aos="fade-up"
-             data-aos-delay="150">
-
-            <i class="ri-heart-3-line"></i>
-
-            <h3>
-                Beauty For Everyone
-            </h3>
-
-            <p>
-                Products designed to celebrate
-                every unique style.
-            </p>
-
-        </div>
-
-
-
-        <!-- BENEFIT 3 -->
-
-        <div class="products-benefit"
-             data-aos="fade-up"
-             data-aos-delay="300">
-
-            <i class="ri-sparkling-line"></i>
-
-            <h3>
-                Latest Trends
-            </h3>
-
-            <p>
-                Discover modern beauty essentials
-                and the latest trends.
-            </p>
-
-        </div>
-
-
-
-        <!-- BENEFIT 4 -->
-
-        <div class="products-benefit"
-             data-aos="fade-up"
-             data-aos-delay="450">
-
-            <i class="ri-shopping-bag-3-line"></i>
-
-            <h3>
-                Everything In One Place
-            </h3>
-
-            <p>
-                Makeup and skincare made easy
-                to discover.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="products-footer">
-
-
-    <div>
-
-        <h2>
-
-            <span>
-                ✨ Femora
-            </span>
-
-            <b>
-                Beauty
-            </b>
-
-        </h2>
-
-        <p>
-            Discover the beauty within you.
-        </p>
-
-    </div>
-
-
-    <div>
-
-        <p>
-            © 2026 Femora Beauty. All Rights Reserved.
-        </p>
-
-    </div>
-
-</footer>
-
-
-
-<!-- =====================================================
-     AOS
-===================================================== -->
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script>
-
-    AOS.init({
-
-        offset: 80,
-
-        duration: 1000,
-
-        once: true
-
-    });
-
-</script>
-
-
-
-<!-- =====================================================
-     MOBILE MENU
-===================================================== -->
-
-<script>
-
-    const menuBtn =
-        document.getElementById("menu-btn");
-
-    const navLinks =
-        document.getElementById("nav-links");
-
-
-    if (menuBtn && navLinks) {
-
-        menuBtn.addEventListener("click", () => {
-
-            navLinks.classList.toggle("open");
-
-        });
-
-    }
-
-</script>
-
-
-
-<!-- =====================================================
-     FILTER PRODUCTS
-===================================================== -->
-
-<script>
-
-    const filterButtons =
-        document.querySelectorAll(".filter-btn");
-
-    const productCards =
-        document.querySelectorAll(".product-card");
-
-
-
-    function filterProducts(category) {
-
-        /* Update filter buttons */
-
-        filterButtons.forEach(button => {
-
-            button.classList.remove("active");
-
-            if (button.dataset.filter === category) {
-
-                button.classList.add("active");
-
-            }
-
-        });
-
-
-        /* Show / Hide products */
-
-        productCards.forEach(card => {
-
-            const productCategory =
-                card.dataset.category;
-
-
-            if (
-                category === "all" ||
-                productCategory === category
-            ) {
-
-                card.style.display = "";
-
-            }
-
-            else {
-
-                card.style.display = "none";
-
-            }
-
-        });
-
-
-        /* Refresh AOS */
-
-        if (typeof AOS !== "undefined") {
-
-            AOS.refreshHard();
-
-        }
-
-    }
-
-
-
-    /* Filter buttons */
-
-    filterButtons.forEach(button => {
-
-        button.addEventListener("click", () => {
-
-            const category =
-                button.dataset.filter;
-
-            filterProducts(category);
-
-        });
-
-    });
-
-
-
-    /* Category Explore buttons */
-
-    const categoryExploreButtons =
-        document.querySelectorAll(".category-explore");
-
-
-    categoryExploreButtons.forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            const category =
-                link.dataset.filter;
-
-
-            setTimeout(() => {
-
-                filterProducts(category);
-
-            }, 100);
-
-        });
-
-    });
-
-
-
-    /* Hero Explore Products */
-
-    const heroExplore =
-        document.querySelector(
-            ".products-main-btn"
-        );
-
-
-    if (heroExplore) {
-
-        heroExplore.addEventListener("click", () => {
-
-            setTimeout(() => {
-
-                filterProducts("all");
-
-            }, 100);
-
-        });
-
-    }
-
-
-
-    /* Beauty Offer */
-
-    const offerButton =
-        document.querySelector(".offer-btn");
-
-
-    if (offerButton) {
-
-        offerButton.addEventListener("click", () => {
-
-            setTimeout(() => {
-
-                filterProducts("all");
-
-            }, 100);
-
-        });
-
-    }
-
-</script>
-
-
-
-<!-- =====================================================
-     FAVORITES + CART
-===================================================== -->
-
-<script>
-
-
-/* =====================================================
-   LOAD SAVED DATA
-===================================================== */
-
-let favorites =
-    JSON.parse(
-        localStorage.getItem("femoraFavorites")
-    ) || [];
-
-
-let cart =
-    JSON.parse(
-        localStorage.getItem("femoraCart")
-    ) || [];
-
-
-
-/* =====================================================
-   ELEMENTS
-===================================================== */
-
-const favoriteButtons =
-    document.querySelectorAll(
-        ".product-wishlist"
-    );
-
-
-const cartButtons =
-    document.querySelectorAll(
-        ".add-cart"
-    );
-
-
-const favoritesCount =
-    document.getElementById(
-        "favorites-count"
-    );
-
-
-const cartCount =
-    document.getElementById(
-        "cart-count"
-    );
-
-
-
-/* =====================================================
-   PRODUCT IMAGE MAP
-   Used to repair old cart items
-===================================================== */
-
-const productImages = {
-
-    "Luxury Foundation":
-        "images/Featured Products/product1.png",
-
-    "Rose Velvet Lipstick":
-        "images/Featured Products/product2.png",
-
-    "Radiant Glow Serum":
-        "images/Featured Products/product3.png",
-
-    "Soft Glam Palette":
-        "images/Featured Products/product4.png",
-
-    "Rose Glow Blush":
-        "images/Featured Products/product5.png",
-
-    "Volume Mascara":
-        "images/Featured Products/product6.png",
-
-    "Daily Moisturizer":
-        "images/Featured Products/product7.png",
-
-    "Femora Signature":
-        "images/Featured Products/product8.png"
-
-};
-
-
-
-/* =====================================================
-   REPAIR OLD CART ITEMS
-===================================================== */
-
-cart.forEach(item => {
-
-    if (
-        !item.image &&
-        productImages[item.name]
-    ) {
-
-        item.image =
-            productImages[item.name];
-
-    }
-
-});
-
-
-localStorage.setItem(
-    "femoraCart",
-    JSON.stringify(cart)
-);
-
-
-
-/* =====================================================
-   FAVORITES COUNTER
-===================================================== */
-
-function updateFavoritesCount() {
-
-    if (favoritesCount) {
-
-        favoritesCount.textContent =
-            favorites.length;
-
-    }
-
-}
-
-
-
-/* =====================================================
-   CART COUNTER
-===================================================== */
-
-function updateCartCount() {
-
-    let totalItems = 0;
-
-
-    cart.forEach(product => {
-
-        totalItems +=
-            Number(product.quantity) || 0;
-
-    });
-
-
-    if (cartCount) {
-
-        cartCount.textContent =
-            totalItems;
-
-    }
-
-}
-
-
-
-/* =====================================================
-   FAVORITES
-===================================================== */
-
-favoriteButtons.forEach(button => {
-
-
-    const productCard =
-        button.closest(".product-card");
-
-
-    if (!productCard) return;
-
-
-    const productName =
-        productCard
-            .querySelector("h3")
-            .textContent
-            .trim();
-
-
-    const productPrice =
-        Number(button.dataset.price);
-
-
-    const productImage =
-        button.dataset.image;
-
-
-
-    /* -------------------------------------------------
-       CHECK SAVED FAVORITE
-    ------------------------------------------------- */
-
-    const existingFavorite =
-        favorites.find(item => {
-
-            if (typeof item === "string") {
-
-                return item === productName;
-
-            }
-
-            return item.name === productName;
-
-        });
-
-
-    if (existingFavorite) {
-
-        button.classList.add("active");
-
-        button.innerHTML =
-            '<i class="ri-heart-fill"></i>';
-
-    }
-
-
-
-    /* -------------------------------------------------
-       FAVORITE CLICK
-    ------------------------------------------------- */
-
-    button.addEventListener("click", () => {
-
-
-        const existingIndex =
-            favorites.findIndex(item => {
-
-                if (typeof item === "string") {
-
-                    return item === productName;
-
-                }
-
-                return item.name === productName;
-
-            });
-
-
-
-        /* REMOVE FAVORITE */
-
-        if (existingIndex !== -1) {
-
-            favorites.splice(
-                existingIndex,
-                1
-            );
-
-
-            button.classList.remove(
-                "active"
-            );
-
-
-            button.innerHTML =
-                '<i class="ri-heart-line"></i>';
-
-        }
-
-
-
-        /* ADD FAVORITE */
-
-        else {
-
-            favorites.push({
-
-                name: productName,
-
-                price: productPrice,
-
-                image: productImage
-
-            });
-
-
-            button.classList.add(
-                "active"
-            );
-
-
-            button.innerHTML =
-                '<i class="ri-heart-fill"></i>';
-
-        }
-
-
-
-        /* SAVE */
-
-        localStorage.setItem(
-
-            "femoraFavorites",
-
-            JSON.stringify(favorites)
-
-        );
-
-
-        updateFavoritesCount();
-
-    });
-
-});
-
-
-
-/* =====================================================
-   ADD TO CART
-===================================================== */
-
-cartButtons.forEach(button => {
-
-
-    button.addEventListener("click", () => {
-
-
-        const productName =
-            button.dataset.name;
-
-
-        const productPrice =
-            Number(button.dataset.price);
-
-
-        const productImage =
-            button.dataset.image;
-
-
-
-        /* -------------------------------------------------
-           CHECK EXISTING PRODUCT
-        ------------------------------------------------- */
-
-        const existingProduct =
-            cart.find(
-                item =>
-                    item.name === productName
-            );
-
-
-
-        /* -------------------------------------------------
-           INCREASE QUANTITY
-        ------------------------------------------------- */
-
-        if (existingProduct) {
-
-            existingProduct.quantity =
-                Number(existingProduct.quantity) + 1;
-
-
-            /* Repair image if missing */
-
-            if (!existingProduct.image) {
-
-                existingProduct.image =
-                    productImage;
-
-            }
-
-        }
-
-
-
-        /* -------------------------------------------------
-           ADD NEW PRODUCT
-        ------------------------------------------------- */
-
-        else {
-
-            cart.push({
-
-                name: productName,
-
-                price: productPrice,
-
-                image: productImage,
-
-                quantity: 1
-
-            });
-
-        }
-
-
-
-        /* -------------------------------------------------
-           SAVE CART
-        ------------------------------------------------- */
-
-        localStorage.setItem(
-
-            "femoraCart",
-
-            JSON.stringify(cart)
-
-        );
-
-
-
-        /* -------------------------------------------------
-           UPDATE COUNTER
-        ------------------------------------------------- */
-
-        updateCartCount();
-
-
-
-        /* -------------------------------------------------
-           BUTTON FEEDBACK
-        ------------------------------------------------- */
-
-        const originalHTML =
-            button.innerHTML;
-
-
-        button.innerHTML =
-            '<i class="ri-check-line"></i> Added';
-
-
-        button.classList.add(
-            "added"
-        );
-
-
-
-        setTimeout(() => {
-
-            button.innerHTML =
-                originalHTML;
-
-
-            button.classList.remove(
-                "added"
-            );
-
-        }, 1500);
-
-    });
-
-});
-
-
-
-/* =====================================================
-   INITIAL COUNTERS
-===================================================== */
-
-updateFavoritesCount();
-
-updateCartCount();
-
-
-</script>
-
-<script src="translations.js"></script>
 </body>
-
 </html>
