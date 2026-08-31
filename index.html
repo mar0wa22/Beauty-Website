@@ -11,11 +11,13 @@
   <link rel="apple-touch-icon" href="images/icons.png">
   <link rel="manifest" href="manifest.json">
 
+  <!-- Remix Icons -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
   />
 
+  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
     rel="stylesheet"
@@ -29,18 +31,16 @@
     rel="stylesheet"
   >
 
+  <!-- AOS -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/aos@next/dist/aos.css"
   />
 
   <title>Femora Beauty</title>
-
 </head>
 
-
 <body>
-
 
   <!-- ================= NAVBAR ================= -->
 
@@ -61,11 +61,8 @@
 
       </div>
 
-
       <div class="nav__menu__btn" id="menu-btn">
-
         <i class="ri-menu-3-line"></i>
-
       </div>
 
     </div>
@@ -73,128 +70,56 @@
 
     <ul class="nav__links" id="nav-links">
 
-
       <!-- HOME -->
-
-      <li
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        data-aos-delay="100"
-      >
-
-        <a href="index.html"
-           data-i18n="home">
-
-          Home
-
-        </a>
-
+      <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+        <a href="index.html" data-i18n="home">Home</a>
       </li>
-
 
       <!-- ABOUT -->
-
-      <li
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        data-aos-delay="200"
-      >
-
-        <a href="about.html"
-           data-i18n="about">
-
-          About
-
-        </a>
-
+      <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <a href="about.html" data-i18n="about">About</a>
       </li>
-
 
       <!-- PRODUCTS -->
-
-      <li
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        data-aos-delay="300"
-      >
-
-        <a href="products.html"
-           data-i18n="products">
-
-          Products
-
-        </a>
-
+      <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+        <a href="products.html" data-i18n="products">Products</a>
       </li>
-
 
       <!-- CONTACT -->
-
-      <li
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        data-aos-delay="400"
-      >
-
-        <a href="contacts.html"
-           data-i18n="contact">
-
-          Contact Us
-
-        </a>
-
+      <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+        <a href="contacts.html" data-i18n="contact">Contact Us</a>
       </li>
 
-
       <!-- LANGUAGE -->
-
       <li class="language-item">
 
         <button
           id="language-toggle"
           class="language-toggle"
-          onclick="toggleLanguage()"
-        >
-
+          onclick="toggleLanguage()">
           AR
-
         </button>
 
       </li>
 
-
       <!-- SHOP NOW -->
+      <li data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
 
-      <li
-        data-aos="fade-left"
-        data-aos-duration="1500"
-        data-aos-delay="500"
-      >
+        <a href="products.html" class="btn">
 
-        <a
-          href="products.html"
-          class="btn"
-        >
-
-          <span data-i18n="shopNow">
-            Shop Now
-          </span>
+          <span data-i18n="shopNow">Shop Now</span>
 
           <span>
-
             <i class="ri-arrow-right-long-line"></i>
-
           </span>
 
         </a>
 
       </li>
 
-
     </ul>
 
   </nav>
-
 
 
   <!-- ================= HOME ================= -->
@@ -204,9 +129,7 @@
     id="home"
   >
 
-
     <!-- Decorative Image -->
-
     <div class="decore">
 
       <img
@@ -217,9 +140,7 @@
     </div>
 
 
-
     <!-- Main Image -->
-
     <div
       class="header__image"
       data-aos="zoom-in-left"
@@ -234,13 +155,8 @@
     </div>
 
 
-
     <!-- Content -->
-
     <div class="header__content">
-
-
-      <!-- TITLE -->
 
       <h1
         data-aos="fade-right"
@@ -248,14 +164,9 @@
         data-aos-delay="700"
         data-i18n="homeTitle"
       >
-
         Discover the Beauty within you
-
       </h1>
 
-
-
-      <!-- DESCRIPTION -->
 
       <p
         class="section__description"
@@ -264,16 +175,11 @@
         data-aos-delay="900"
         data-i18n="homeDescription"
       >
-
         Femora Beauty offers a wide range of premium makeup and skincare
         products designed to enhance your beauty. Explore the latest
         collections and discover the perfect products for your unique style 💄
-
       </p>
 
-
-
-      <!-- FORM -->
 
       <form
         action="/"
@@ -282,7 +188,6 @@
         data-aos-delay="1100"
       >
 
-
         <!-- LOCATION -->
 
         <div class="input__group">
@@ -290,9 +195,7 @@
           <label for="location">
 
             <span>
-
               <i class="ri-map-pin-line"></i>
-
             </span>
 
             <span data-i18n="location">
@@ -300,7 +203,6 @@
             </span>
 
           </label>
-
 
           <input
             type="text"
@@ -313,7 +215,6 @@
         </div>
 
 
-
         <!-- OPENING DATE -->
 
         <div class="input__group">
@@ -321,9 +222,7 @@
           <label for="date">
 
             <span>
-
               <i class="ri-calendar-line"></i>
-
             </span>
 
             <span data-i18n="openingDate">
@@ -331,7 +230,6 @@
             </span>
 
           </label>
-
 
           <input
             type="text"
@@ -343,56 +241,41 @@
 
         </div>
 
-
       </form>
-
 
     </div>
 
   </header>
 
 
-
   <!-- ================= AOS ================= -->
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-
   <script>
-
     AOS.init({
       offset: 0
     });
-
   </script>
-
 
 
   <!-- ================= MENU ================= -->
 
   <script>
 
-    const menuBtn =
-      document.getElementById("menu-btn");
-
-    const navLinks =
-      document.getElementById("nav-links");
-
+    const menuBtn = document.getElementById("menu-btn");
+    const navLinks = document.getElementById("nav-links");
 
     menuBtn.addEventListener("click", () => {
-
       navLinks.classList.toggle("open");
-
     });
 
   </script>
 
 
-
   <!-- ================= TRANSLATION ================= -->
 
   <script src="translations.js"></script>
-
 
 </body>
 

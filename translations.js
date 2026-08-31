@@ -1,7 +1,9 @@
 /* =========================================
-   FEMORA BEAUTY - LANGUAGE SYSTEM
+   FEMORA BEAUTY
+   LANGUAGE SYSTEM
    English / Arabic
 ========================================= */
+
 
 const translations = {
 
@@ -14,9 +16,13 @@ const translations = {
         /* NAVBAR */
 
         home: "Home",
+
         about: "About",
+
         products: "Products",
+
         contact: "Contact Us",
+
         shopNow: "Shop Now",
 
         language: "AR",
@@ -25,75 +31,81 @@ const translations = {
         /* HOME */
 
         homeTitle:
-        "Discover the Beauty within you",
+            "Discover the Beauty within you",
 
         homeDescription:
-        "Femora Beauty offers a wide range of premium makeup and skincare products designed to enhance your beauty. Explore the latest collections and discover the perfect products for your unique style 💄",
+            "Femora Beauty offers a wide range of premium makeup and skincare products designed to enhance your beauty. Explore the latest collections and discover the perfect products for your unique style 💄",
 
         location:
-        "Location",
+            "Location",
 
         locationPlaceholder:
-        "Haddah, Almadinah",
+            "Haddah, Almadinah",
 
         openingDate:
-        "Opening Date",
+            "Opening Date",
 
         datePlaceholder:
-        "3th, March 2024",
+            "3th, March 2024",
 
 
-        /* =================================
-           ABOUT
-        ================================= */
+        /* ABOUT */
 
         aboutTitle:
-        "About",
+            "About",
 
-        femoraBeauty:
-        "Femora Beauty",
+        aboutBrand:
+            "Femora Beauty",
 
-        aboutText1:
-        "✨ Welcome to Femora Beauty, where luxury meets everyday elegance. We bring together a handpicked selection of top-tier makeup and radiant skincare from world-class brands designed to care for your skin and highlight your personal flair.",
+        aboutDescription1:
+            "✨ Welcome to Femora Beauty, where luxury meets everyday elegance. We bring together a handpicked selection of top-tier makeup and radiant skincare from world-class brands designed to care for your skin and highlight your personal flair.",
 
-        aboutText2:
-        "✨ Femora Beauty offers a collection of premium makeup and skincare products carefully selected from trusted brands around the world.",
+        aboutDescription2:
+            "✨ Femora Beauty offers a collection of premium makeup and skincare products carefully selected from trusted brands around the world.",
 
         exploreMore:
-        "Explore More",
+            "Explore More",
 
 
         /* WHY FEMORA */
 
         whyChooseUs:
-        "WHY CHOOSE US",
+            "WHY CHOOSE US",
 
         beautyMadeForYou:
-        "Beauty Made For You",
+            "Beauty Made For You",
 
         whyDescription:
-        "At Femora Beauty, we believe that beauty is unique to everyone. We bring you carefully selected products to help you express your style with confidence.",
+            "At Femora Beauty, we believe that beauty is unique to everyone. We bring you carefully selected products to help you express your style with confidence.",
+
+
+        /* FEATURES */
 
         premiumQuality:
-        "Premium Quality",
+            "Premium Quality",
 
-        premiumDescription:
-        "Carefully selected beauty products.",
+        premiumQualityDescription:
+            "Carefully selected beauty products.",
+
 
         latestTrends:
-        "Latest Trends",
+            "Latest Trends",
 
-        trendsDescription:
-        "Discover the newest beauty trends.",
+        latestTrendsDescription:
+            "Discover the newest beauty trends.",
+
 
         madeWithLove:
-        "Made With Love",
+            "Made With Love",
 
-        loveDescription:
-        "Everything you need in one place.",
+        madeWithLoveDescription:
+            "Everything you need in one place.",
+
+
+        /* BACK */
 
         backToAbout:
-        "Back to About"
+            "Back to About"
 
     },
 
@@ -107,96 +119,102 @@ const translations = {
         /* NAVBAR */
 
         home:
-        "الرئيسية",
+            "الرئيسية",
 
         about:
-        "من نحن",
+            "من نحن",
 
         products:
-        "المنتجات",
+            "المنتجات",
 
         contact:
-        "تواصل معنا",
+            "تواصل معنا",
 
         shopNow:
-        "تسوقي الآن",
+            "تسوقي الآن",
 
         language:
-        "EN",
+            "EN",
 
 
         /* HOME */
 
         homeTitle:
-        "اكتشفي الجمال بداخلك",
+            "اكتشفي الجمال بداخلك",
 
         homeDescription:
-        "تقدم فيمورا بيوتي مجموعة واسعة من منتجات المكياج والعناية بالبشرة الفاخرة المصممة لتعزيز جمالك. استكشفي أحدث مجموعاتنا واكتشفي المنتجات المثالية التي تناسب أسلوبك الفريد 💄",
+            "تقدم فيمورا بيوتي مجموعة واسعة من منتجات المكياج والعناية بالبشرة الفاخرة المصممة لتعزيز جمالك. استكشفي أحدث مجموعاتنا واكتشفي المنتجات المثالية التي تناسب أسلوبك الفريد 💄",
 
         location:
-        "الموقع",
+            "الموقع",
 
         locationPlaceholder:
-        "حدة، المدينة",
+            "حدة، المدينة",
 
         openingDate:
-        "تاريخ الافتتاح",
+            "تاريخ الافتتاح",
 
         datePlaceholder:
-        "3 مارس 2024",
+            "3 مارس 2024",
 
 
-        /* =================================
-           ABOUT
-        ================================= */
+        /* ABOUT */
 
         aboutTitle:
-        "عن",
+            "عن",
 
-        femoraBeauty:
-        "فيمورا بيوتي",
+        aboutBrand:
+            "فيمورا بيوتي",
 
-        aboutText1:
-        "✨ مرحبًا بكِ في فيمورا بيوتي، حيث تلتقي الفخامة بالأناقة اليومية. نقدم لكِ مجموعة مختارة بعناية من أفضل مستحضرات المكياج ومنتجات العناية بالبشرة المشرقة من علامات تجارية عالمية، صُممت للعناية ببشرتك وإبراز جمالكِ الخاص.",
+        aboutDescription1:
+            "✨ مرحبًا بكِ في فيمورا بيوتي، حيث تلتقي الفخامة بالأناقة اليومية. نقدم لكِ مجموعة مختارة بعناية من أفضل منتجات المكياج والعناية بالبشرة المشرقة من علامات تجارية عالمية، صُممت للعناية ببشرتك وإبراز جمالك وأسلوبك الخاص.",
 
-        aboutText2:
-        "✨ تقدم فيمورا بيوتي مجموعة من منتجات المكياج والعناية بالبشرة الفاخرة، تم اختيارها بعناية من علامات تجارية موثوقة حول العالم.",
+        aboutDescription2:
+            "✨ تقدم فيمورا بيوتي مجموعة من منتجات المكياج والعناية بالبشرة الفاخرة، تم اختيارها بعناية من علامات تجارية موثوقة حول العالم.",
 
         exploreMore:
-        "اكتشفي المزيد",
+            "اكتشفي المزيد",
 
 
         /* WHY FEMORA */
 
         whyChooseUs:
-        "لماذا تختاريننا؟",
+            "لماذا تختاريننا؟",
 
         beautyMadeForYou:
-        "جمال صُمم من أجلكِ",
+            "جمال صُمم من أجلكِ",
 
         whyDescription:
-        "في فيمورا بيوتي، نؤمن بأن الجمال يختلف من شخص لآخر. لذلك نقدم لكِ منتجات مختارة بعناية تساعدكِ على التعبير عن أسلوبكِ بثقة.",
+            "في فيمورا بيوتي، نؤمن بأن الجمال يختلف من شخص لآخر. لذلك نقدم لكِ منتجات مختارة بعناية تساعدكِ على التعبير عن أسلوبكِ بثقة.",
+
+
+        /* FEATURES */
 
         premiumQuality:
-        "جودة فائقة",
+            "جودة فاخرة",
 
-        premiumDescription:
-        "منتجات تجميل مختارة بعناية.",
+        premiumQualityDescription:
+            "منتجات تجميل مختارة بعناية.",
+
 
         latestTrends:
-        "أحدث الصيحات",
+            "أحدث صيحات الجمال",
 
-        trendsDescription:
-        "اكتشفي أحدث صيحات الجمال.",
+        latestTrendsDescription:
+            "اكتشفي أحدث اتجاهات الجمال.",
+
 
         madeWithLove:
-        "صُنع بحب",
+            "صُنع بحب",
 
-        loveDescription:
-        "كل ما تحتاجينه في مكان واحد.",
+        madeWithLoveDescription:
+            "كل ما تحتاجينه في مكان واحد.",
+
+
+        /* BACK */
 
         backToAbout:
-        "العودة إلى صفحة من نحن"
+            "العودة إلى من نحن"
 
     }
 
@@ -212,7 +230,7 @@ let currentLanguage =
 
 
 /* =========================================
-   TRANSLATE ELEMENTS
+   TRANSLATE PAGE
 ========================================= */
 
 function translatePage() {
@@ -325,11 +343,15 @@ function toggleLanguage() {
             : "en";
 
 
+    /* Save language */
+
     localStorage.setItem(
         "femoraLanguage",
         currentLanguage
     );
 
+
+    /* Translate current page */
 
     translatePage();
 
