@@ -4397,3 +4397,43 @@ body {
 }
 
 
+/* =========================================
+   LANGUAGE BUTTON
+========================================= */
+
+.language-toggle {
+
+    border: 1px solid rgba(209, 123, 136, 0.35);
+
+    background: transparent;
+
+    color: #d17b88;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.language-toggle:hover {
+
+    background: #d17b88;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
