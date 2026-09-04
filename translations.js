@@ -277,11 +277,8 @@ const translations = {
         cartSmallTitle:
             "YOUR SHOPPING BAG",
 
-        cartYour:
-            "Your",
-
         navCart:
-            "Cart",
+            "Your Cart",
 
         cartDescription:
             "Review your beauty essentials before checkout.",
@@ -873,11 +870,10 @@ contactCtaDescription:
         cartSmallTitle:
             "حقيبة التسوق الخاصة بكِ",
 
-        cartYour:
-            "سلة",
+    
 
         navCart:
-            "تسوقكِ",
+            "سلة تسوقك ",
 
         cartDescription:
             "راجعي أساسيات جمالكِ قبل إتمام الطلب.",
