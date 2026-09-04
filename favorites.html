@@ -9,9 +9,13 @@
           content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/png" href="images/icons.png">
-<link rel="apple-touch-icon" href="images/icons.png">
-<link rel="manifest" href="manifest.json">
+
+    <link rel="icon" type="image/png" href="images/icons.png">
+
+    <link rel="apple-touch-icon" href="images/icons.png">
+
+    <link rel="manifest" href="manifest.json">
+
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
 
@@ -76,50 +80,87 @@
     <ul class="nav__links"
         id="nav-links">
 
+
         <li>
-            <a href="index.html">
+
+            <a href="index.html"
+               data-i18n="home">
+
                 Home
+
             </a>
+
         </li>
 
+
         <li>
-            <a href="about.html">
+
+            <a href="about.html"
+               data-i18n="about">
+
                 About
+
             </a>
+
         </li>
 
+
         <li>
-            <a href="products.html">
+
+            <a href="products.html"
+               data-i18n="products">
+
                 Products
+
             </a>
+
         </li>
 
+
         <li>
-            <a href="contacts.html">
+
+            <a href="contacts.html"
+               data-i18n="contact">
+
                 Contact Us
+
             </a>
+
         </li>
 
+
         <li>
+
             <a href="favorites.html">
+
                 <i class="ri-heart-fill"></i>
-                Favorites
+
+                <span data-i18n="favorites">
+                    Favorites
+                </span>
+
             </a>
+
         </li>
+
 
     </ul>
-<li class="language-item">
 
-    <button
-        id="language-toggle"
-        class="language-toggle"
-        onclick="toggleLanguage()">
 
-        AR
+    <li class="language-item">
 
-    </button>
+        <button
+            id="language-toggle"
+            class="language-toggle"
+            onclick="toggleLanguage()">
 
-</li>
+            AR
+
+        </button>
+
+    </li>
+
+
 </nav>
 
 
@@ -133,18 +174,38 @@
 
     <div class="favorites-heading">
 
-        <span>
+
+        <span data-i18n="favoritesSmallTitle">
+
             YOUR FAVORITES
+
         </span>
 
+
         <h1>
-            Your Beauty
-            <strong>Favorites</strong>
+
+            <span data-i18n="favoritesTitleYour">
+
+                Your Beauty
+
+            </span>
+
+
+            <strong data-i18n="favoritesTitle">
+
+                Favorites
+
+            </strong>
+
         </h1>
 
-        <p>
+
+        <p data-i18n="favoritesDescription">
+
             Products you love and want to keep close.
+
         </p>
+
 
     </div>
 
@@ -163,6 +224,7 @@
 
 <script>
 
+
 /* =========================================
    GET FAVORITES
 ========================================= */
@@ -174,7 +236,9 @@ let favorites =
 
 
 const favoritesContainer =
-    document.getElementById("favorites-container");
+    document.getElementById(
+        "favorites-container"
+    );
 
 
 
@@ -183,6 +247,7 @@ const favoritesContainer =
 ========================================= */
 
 function displayFavorites() {
+
 
     favoritesContainer.innerHTML = "";
 
@@ -193,24 +258,35 @@ function displayFavorites() {
 
     if (favorites.length === 0) {
 
+
+        const t =
+            translations[currentLanguage];
+
+
         favoritesContainer.innerHTML = `
 
             <div class="empty-favorites">
 
                 <i class="ri-heart-3-line"></i>
 
+
                 <h2>
-                    No Favorites Yet
+
+                    ${t.noFavoritesYet}
+
                 </h2>
 
+
                 <p>
-                    You haven't added any products
-                    to your favorites yet.
+
+                    ${t.noFavoritesDescription}
+
                 </p>
+
 
                 <a href="products.html">
 
-                    Explore Products
+                    ${t.exploreProducts}
 
                     <i class="ri-arrow-right-line"></i>
 
@@ -220,7 +296,9 @@ function displayFavorites() {
 
         `;
 
+
         return;
+
     }
 
 
@@ -231,60 +309,96 @@ function displayFavorites() {
 
     favorites.forEach((product, index) => {
 
+
+        const t =
+            translations[currentLanguage];
+
+
         const card =
             document.createElement("div");
 
+
         card.className =
             "favorite-card";
+
 
 
         card.innerHTML = `
 
             <div class="favorite-image">
 
+
                 <img
+
                     src="${product.image}"
+
                     alt="${product.name}"
+
                     onerror="this.src='images/1.png'"
+
                 >
 
 
+
                 <button
+
                     class="remove-favorite"
+
                     data-index="${index}"
-                    title="Remove from favorites">
+
+                    title="${t.removeFromFavorites}"
+
+                >
 
                     <i class="ri-heart-fill"></i>
 
                 </button>
 
+
             </div>
+
 
 
             <div class="favorite-info">
 
+
                 <span>
-                    FEMORA BEAUTY
+
+                    ${t.femoraBeauty}
+
                 </span>
 
+
                 <h3>
+
                     ${product.name}
+
                 </h3>
 
+
                 <strong>
+
                     $${product.price}.00
+
                 </strong>
 
 
+
                 <button
+
                     class="remove-button"
-                    data-index="${index}">
+
+                    data-index="${index}"
+
+                >
 
                     <i class="ri-delete-bin-line"></i>
 
-                    Remove
+
+                    ${t.remove}
 
                 </button>
+
 
             </div>
 
@@ -292,6 +406,7 @@ function displayFavorites() {
 
 
         favoritesContainer.appendChild(card);
+
 
     });
 
@@ -305,27 +420,36 @@ function displayFavorites() {
         .querySelectorAll(".remove-favorite")
         .forEach(button => {
 
+
             button.addEventListener(
                 "click",
                 function () {
 
+
                     const index =
-                        Number(this.dataset.index);
+                        Number(
+                            this.dataset.index
+                        );
 
 
                     favorites.splice(index, 1);
 
 
                     localStorage.setItem(
+
                         "femoraFavorites",
+
                         JSON.stringify(favorites)
+
                     );
 
 
                     displayFavorites();
 
+
                 }
             );
+
 
         });
 
@@ -339,29 +463,39 @@ function displayFavorites() {
         .querySelectorAll(".remove-button")
         .forEach(button => {
 
+
             button.addEventListener(
                 "click",
                 function () {
 
+
                     const index =
-                        Number(this.dataset.index);
+                        Number(
+                            this.dataset.index
+                        );
 
 
                     favorites.splice(index, 1);
 
 
                     localStorage.setItem(
+
                         "femoraFavorites",
+
                         JSON.stringify(favorites)
+
                     );
 
 
                     displayFavorites();
 
+
                 }
             );
 
+
         });
+
 
 }
 
@@ -382,19 +516,55 @@ displayFavorites();
 const menuBtn =
     document.getElementById("menu-btn");
 
+
 const navLinks =
     document.getElementById("nav-links");
 
 
-menuBtn.addEventListener("click", () => {
+if (menuBtn) {
 
-    navLinks.classList.toggle("open");
+    menuBtn.addEventListener(
 
-});
+        "click",
+
+        () => {
+
+            navLinks.classList.toggle("open");
+
+        }
+
+    );
+
+}
+
+
+
+/* =========================================
+   UPDATE FAVORITES WHEN LANGUAGE CHANGES
+========================================= */
+
+const originalToggleLanguage =
+    toggleLanguage;
+
+
+window.toggleLanguage =
+    function () {
+
+
+        originalToggleLanguage();
+
+
+        displayFavorites();
+
+
+    };
+
 
 </script>
 
+
 <script src="translations.js"></script>
+
 </body>
 
 </html>

@@ -401,6 +401,37 @@ const translations = {
 
         orderNumber:
             "Order Number:",
+                    /* ================= FAVORITES ================= */
+
+        favoritesSmallTitle:
+            "YOUR FAVORITES",
+
+        favoritesTitleYour:
+            "Your Beauty",
+
+        favoritesTitle:
+            "Favorites",
+
+        favoritesDescription:
+            "Products you love and want to keep close.",
+
+        noFavoritesYet:
+            "No Favorites Yet",
+
+        noFavoritesDescription:
+            "You haven't added any products to your favorites yet.",
+
+        exploreProducts:
+            "Explore Products",
+
+        femoraBeauty:
+            "FEMORA BEAUTY",
+
+        removeFromFavorites:
+            "Remove from favorites",
+
+        remove:
+            "Remove",
         /* ================= FOOTER ================= */
 
         footerTagline:
@@ -813,6 +844,37 @@ const translations = {
         orderNumber:
             "رقم الطلب:",
 
+                    /* ================= FAVORITES ================= */
+
+        favoritesSmallTitle:
+            "منتجاتكِ المفضلة",
+
+        favoritesTitleYour:
+            "جمالكِ",
+
+        favoritesTitle:
+            "المفضلة",
+
+        favoritesDescription:
+            "المنتجات التي تحبينها وترغبين بالاحتفاظ بها دائمًا.",
+
+        noFavoritesYet:
+            "لا توجد منتجات مفضلة بعد",
+
+        noFavoritesDescription:
+            "لم تقومي بإضافة أي منتجات إلى المفضلة حتى الآن.",
+
+        exploreProducts:
+            "استكشفي المنتجات",
+
+        femoraBeauty:
+            "فيمورا بيوتي",
+
+        removeFromFavorites:
+            "إزالة من المفضلة",
+
+        remove:
+            "إزالة",
         /* ================= FOOTER ================= */
 
         footerTagline:
