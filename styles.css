@@ -211,7 +211,8 @@ nav {
 .header__content .input__group {
   flex: 1;
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .header__content label {
