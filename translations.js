@@ -13,6 +13,7 @@ const translations = {
         about: "About",
         products: "Products",
         contact: "Contact Us",
+        favorites: "Favorites",
         shopNow: "Shop Now",
         language: "AR",
 
@@ -606,6 +607,7 @@ contactCtaDescription:
         about: "من نحن",
         products: "المنتجات",
         contact: "تواصل معنا",
+        favorites: "المفضلة",
         shopNow: "تسوقي الآن",
         language: "EN",
 
