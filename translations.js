@@ -265,7 +265,142 @@ const translations = {
         everythingOnePlaceDescription:
             "Makeup and skincare made easy to discover.",
 
+        /* ================= CART ================= */
 
+        favorites:
+            "Favorites",
+
+        cart:
+            "Cart",
+
+        cartSmallTitle:
+            "YOUR SHOPPING BAG",
+
+        cartTitleYour:
+            "Your",
+
+        cartTitleCart:
+            "Cart",
+
+        cartDescription:
+            "Review your beauty essentials before checkout.",
+
+        emptyCartTitle:
+            "Your Cart Is Empty",
+
+        emptyCartDescription:
+            "You haven't added any beauty products yet.",
+
+        startShopping:
+            "Start Shopping",
+
+        orderSummary:
+            "Order Summary",
+
+        subtotal:
+            "Subtotal",
+
+        shipping:
+            "Shipping",
+
+        free:
+            "Free",
+
+        total:
+            "Total",
+
+        proceedCheckout:
+            "Proceed To Checkout",
+
+        continueShopping:
+            "Continue Shopping",
+
+        remove:
+            "Remove",
+
+
+        /* ================= CHECKOUT ================= */
+
+        secureCheckout:
+            "Secure Checkout",
+
+        checkoutDescription:
+            "Complete your order details below.",
+
+        fullName:
+            "Full Name",
+
+        fullNamePlaceholder:
+            "Enter your full name",
+
+        phoneNumber:
+            "Phone Number",
+
+        phonePlaceholder:
+            "Enter your phone number",
+
+        deliveryAddress:
+            "Delivery Address",
+
+        addressPlaceholder:
+            "Enter your delivery address",
+
+        paymentMethod:
+            "Payment Method",
+
+        cashOnDelivery:
+            "Cash on Delivery",
+
+        cashDescription:
+            "Pay when your order arrives",
+
+        cardPayment:
+            "Card Payment",
+
+        cardDescription:
+            "Demo verification",
+
+        demoNote:
+            "This is a front-end demo. No real payment or card information is processed.",
+
+        orderTotal:
+            "Order Total",
+
+        continue:
+            "Continue",
+
+
+        /* ================= VERIFICATION ================= */
+
+        verifyPayment:
+            "Verify Your Payment",
+
+        verificationDescription:
+            "For this demo, enter the verification code shown below to confirm your order.",
+
+        demoVerificationCode:
+            "Demo verification code:",
+
+        verifyCompleteOrder:
+            "Verify & Complete Order",
+
+        enterVerificationCode:
+            "Please enter the 6-digit verification code.",
+
+        incorrectVerificationCode:
+            "Incorrect verification code. Please try again.",
+
+
+        /* ================= SUCCESS ================= */
+
+        orderConfirmed:
+            "Order Confirmed!",
+
+        successDescription:
+            "Thank you for shopping with Femora Beauty. Your order has been successfully confirmed.",
+
+        orderNumber:
+            "Order Number:",
         /* ================= FOOTER ================= */
 
         footerTagline:
@@ -541,7 +676,142 @@ const translations = {
 
         everythingOnePlaceDescription:
             "اكتشفي المكياج والعناية بالبشرة بسهولة.",
+        /* ================= CART ================= */
 
+        favorites:
+            "المفضلة",
+
+        cart:
+            "السلة",
+
+        cartSmallTitle:
+            "حقيبة التسوق الخاصة بكِ",
+
+        cartTitleYour:
+            "سلة",
+
+        cartTitleCart:
+            "تسوقكِ",
+
+        cartDescription:
+            "راجعي أساسيات جمالكِ قبل إتمام الطلب.",
+
+        emptyCartTitle:
+            "سلة التسوق فارغة",
+
+        emptyCartDescription:
+            "لم تقومي بإضافة أي منتجات تجميل بعد.",
+
+        startShopping:
+            "ابدئي التسوق",
+
+        orderSummary:
+            "ملخص الطلب",
+
+        subtotal:
+            "المجموع الفرعي",
+
+        shipping:
+            "الشحن",
+
+        free:
+            "مجاني",
+
+        total:
+            "الإجمالي",
+
+        proceedCheckout:
+            "متابعة لإتمام الطلب",
+
+        continueShopping:
+            "متابعة التسوق",
+
+        remove:
+            "حذف",
+
+
+        /* ================= CHECKOUT ================= */
+
+        secureCheckout:
+            "إتمام طلب آمن",
+
+        checkoutDescription:
+            "أكملي تفاصيل طلبكِ أدناه.",
+
+        fullName:
+            "الاسم الكامل",
+
+        fullNamePlaceholder:
+            "أدخلي اسمكِ الكامل",
+
+        phoneNumber:
+            "رقم الهاتف",
+
+        phonePlaceholder:
+            "أدخلي رقم هاتفكِ",
+
+        deliveryAddress:
+            "عنوان التوصيل",
+
+        addressPlaceholder:
+            "أدخلي عنوان التوصيل",
+
+        paymentMethod:
+            "طريقة الدفع",
+
+        cashOnDelivery:
+            "الدفع عند الاستلام",
+
+        cashDescription:
+            "ادفعي عند وصول طلبكِ",
+
+        cardPayment:
+            "الدفع بالبطاقة",
+
+        cardDescription:
+            "تحقق تجريبي",
+
+        demoNote:
+            "هذا نموذج تجريبي للواجهة الأمامية. لا تتم معالجة أي معلومات دفع أو بطاقات حقيقية.",
+
+        orderTotal:
+            "إجمالي الطلب",
+
+        continue:
+            "متابعة",
+
+
+        /* ================= VERIFICATION ================= */
+
+        verifyPayment:
+            "تأكيد عملية الدفع",
+
+        verificationDescription:
+            "في هذا النموذج التجريبي، أدخلي رمز التحقق الموضح أدناه لتأكيد طلبكِ.",
+
+        demoVerificationCode:
+            "رمز التحقق التجريبي:",
+
+        verifyCompleteOrder:
+            "تأكيد وإتمام الطلب",
+
+        enterVerificationCode:
+            "يرجى إدخال رمز التحقق المكون من 6 أرقام.",
+
+        incorrectVerificationCode:
+            "رمز التحقق غير صحيح، يرجى المحاولة مرة أخرى.",
+
+
+        /* ================= SUCCESS ================= */
+
+        orderConfirmed:
+            "تم تأكيد الطلب!",
+
+        successDescription:
+            "شكرًا لتسوقكِ من فيمورا بيوتي. تم تأكيد طلبكِ بنجاح.",
+
+        orderNumber:
+            "رقم الطلب:",
 
         /* ================= FOOTER ================= */
 
