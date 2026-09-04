@@ -274,7 +274,7 @@ const translations = {
         cart:
             "Cart",
 
-        cartSmallTitle:
+        cartSubtitle:
             "YOUR SHOPPING BAG",
 
         navCart:
@@ -867,10 +867,9 @@ contactCtaDescription:
         cart:
             "السلة",
 
-        cartSmallTitle:
+        cartSubtitle:
             "حقيبة التسوق الخاصة بكِ",
 
-    
 
         navCart:
             "سلة تسوقك ",
