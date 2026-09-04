@@ -278,7 +278,7 @@ const translations = {
             "YOUR SHOPPING BAG",
 
         navCart:
-            "Your Cart",
+            " Cart",
 
         cartDescription:
             "Review your beauty essentials before checkout.",
