@@ -433,16 +433,15 @@ const translations = {
 
         remove:
             "Remove",
+/* ================= CONTACT PAGE ================= */
 
-            /* ================= CONTACT PAGE ================= */
-
-contactHeroSmallTitle:
+contactSmallTitle:
     "FEMORA BEAUTY",
 
-contactHeroTitle:
+letsTalk:
     "Let's Talk",
 
-contactHeroTitleBeauty:
+beauty:
     "Beauty.",
 
 contactHeroDescription:
@@ -457,10 +456,10 @@ startConversation:
 getInTouch:
     "GET IN TOUCH",
 
-contactHeading:
+loveToHear:
     "We'd Love To Hear From You",
 
-contactDescription:
+contactHeadingDescription:
     "Whether you have a question about our products, your order, or anything else, our team is ready to help.",
 
 
@@ -484,13 +483,13 @@ callUs:
 visitUs:
     "Visit Us",
 
+contactLocation:
+    "Haddah, Sana'a, Yemen",
+
 openingHours:
     "Opening Hours",
 
-locationAddress:
-    "Haddah, Sana'a, Yemen",
-
-openingHoursTime:
+contactHours:
     "Sat - Thu | 9:00 AM - 8:00 PM",
 
 followFemora:
@@ -499,7 +498,7 @@ followFemora:
 
 /* ================= CONTACT FORM ================= */
 
-sendMessageSmall:
+sendMessageTitle:
     "SEND A MESSAGE",
 
 tellUsMind:
@@ -511,38 +510,35 @@ contactFormDescription:
 yourName:
     "Your Name",
 
-yourNamePlaceholder:
-    "Enter your name",
-
 emailAddress:
     "Email Address",
-
-emailPlaceholder:
-    "Enter your email",
 
 subject:
     "Subject",
 
-subjectPlaceholder:
-    "What would you like to talk about?",
-
 yourMessage:
     "Your Message",
-
-messagePlaceholder:
-    "Write your message here...",
 
 sendMessage:
     "Send Message",
 
-sending:
-    "Sending...",
-
-messageSuccess:
+messageReceived:
     "Thank you! Your message has been received.",
 
-messageError:
-    "Sorry, your message could not be sent. Please try again.",
+
+/* ================= CONTACT PLACEHOLDERS ================= */
+
+contactNamePlaceholder:
+    "Enter your name",
+
+contactEmailPlaceholder:
+    "Enter your email",
+
+contactSubjectPlaceholder:
+    "What would you like to talk about?",
+
+contactMessagePlaceholder:
+    "Write your message here...",
 
 
 /* ================= CONTACT BENEFITS ================= */
@@ -550,7 +546,7 @@ messageError:
 whyContactUs:
     "WHY CONTACT US?",
 
-wereHereForYou:
+hereForYou:
     "We're Here For You",
 
 friendlySupport:
@@ -586,14 +582,11 @@ beautyJourneyStarts:
 haveQuestion:
     "Have A Question?",
 
-makeItBeautiful:
+makeBeautiful:
     "Let's Make It Beautiful.",
 
 contactCtaDescription:
     "Explore our collection and discover products made to bring out your unique beauty.",
-
-exploreProducts:
-    "Explore Products",
 
         /* ================= FOOTER ================= */
 
@@ -1041,15 +1034,15 @@ exploreProducts:
         remove:
             "إزالة",
 
-            /* ================= CONTACT PAGE ================= */
+    /* ================= CONTACT PAGE ================= */
 
-contactHeroSmallTitle:
+contactSmallTitle:
     "فيمورا بيوتي",
 
-contactHeroTitle:
+letsTalk:
     "لنتحدث عن",
 
-contactHeroTitleBeauty:
+beauty:
     "الجمال.",
 
 contactHeroDescription:
@@ -1064,10 +1057,10 @@ startConversation:
 getInTouch:
     "تواصلي معنا",
 
-contactHeading:
+loveToHear:
     "يسعدنا أن نسمع منكِ",
 
-contactDescription:
+contactHeadingDescription:
     "سواء كان لديكِ سؤال حول منتجاتنا أو طلبكِ أو أي شيء آخر، فإن فريقنا جاهز لمساعدتكِ.",
 
 
@@ -1091,13 +1084,13 @@ callUs:
 visitUs:
     "زورينا",
 
+contactLocation:
+    "حدة، صنعاء، اليمن",
+
 openingHours:
     "ساعات العمل",
 
-locationAddress:
-    "اليمن صنعاء، حدة المدينة",
-
-openingHoursTime:
+contactHours:
     "السبت - الخميس | 9:00 صباحًا - 8:00 مساءً",
 
 followFemora:
@@ -1106,7 +1099,7 @@ followFemora:
 
 /* ================= CONTACT FORM ================= */
 
-sendMessageSmall:
+sendMessageTitle:
     "أرسلي رسالة",
 
 tellUsMind:
@@ -1118,38 +1111,35 @@ contactFormDescription:
 yourName:
     "اسمكِ",
 
-yourNamePlaceholder:
-    "أدخلي اسمكِ",
-
 emailAddress:
     "البريد الإلكتروني",
-
-emailPlaceholder:
-    "أدخلي بريدكِ الإلكتروني",
 
 subject:
     "الموضوع",
 
-subjectPlaceholder:
-    "ما الذي ترغبين في التحدث عنه؟",
-
 yourMessage:
     "رسالتكِ",
-
-messagePlaceholder:
-    "اكتبي رسالتكِ هنا...",
 
 sendMessage:
     "إرسال الرسالة",
 
-sending:
-    "جارٍ الإرسال...",
-
-messageSuccess:
+messageReceived:
     "شكرًا لكِ! تم استلام رسالتكِ بنجاح.",
 
-messageError:
-    "عذرًا، تعذر إرسال رسالتكِ. يرجى المحاولة مرة أخرى.",
+
+/* ================= CONTACT PLACEHOLDERS ================= */
+
+contactNamePlaceholder:
+    "أدخلي اسمكِ",
+
+contactEmailPlaceholder:
+    "أدخلي بريدكِ الإلكتروني",
+
+contactSubjectPlaceholder:
+    "ما الذي ترغبين في التحدث عنه؟",
+
+contactMessagePlaceholder:
+    "اكتبي رسالتكِ هنا...",
 
 
 /* ================= CONTACT BENEFITS ================= */
@@ -1157,7 +1147,7 @@ messageError:
 whyContactUs:
     "لماذا تتواصلين معنا؟",
 
-wereHereForYou:
+hereForYou:
     "نحن هنا من أجلكِ",
 
 friendlySupport:
@@ -1193,14 +1183,11 @@ beautyJourneyStarts:
 haveQuestion:
     "هل لديكِ سؤال؟",
 
-makeItBeautiful:
+makeBeautiful:
     "لنجعلها أكثر جمالًا.",
 
 contactCtaDescription:
     "استكشفي مجموعتنا واكتشفي منتجات مصممة لإبراز جمالكِ الفريد.",
-
-exploreProducts:
-    "استكشفي المنتجات",
 
         /* ================= FOOTER ================= */
 
