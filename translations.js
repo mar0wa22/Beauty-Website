@@ -277,10 +277,10 @@ const translations = {
         cartSmallTitle:
             "YOUR SHOPPING BAG",
 
-        cartTitleYour:
+        cartYour:
             "Your",
 
-        cartTitleCart:
+        navCart:
             "Cart",
 
         cartDescription:
@@ -421,7 +421,7 @@ const translations = {
 
         noFavoritesDescription:
             "You haven't added any products to your favorites yet.",
-            
+
         femoraBeauty:
             "FEMORA BEAUTY",
 
@@ -873,10 +873,10 @@ contactCtaDescription:
         cartSmallTitle:
             "حقيبة التسوق الخاصة بكِ",
 
-        cartTitleYour:
+        cartYour:
             "سلة",
 
-        cartTitleCart:
+        navCart:
             "تسوقكِ",
 
         cartDescription:
