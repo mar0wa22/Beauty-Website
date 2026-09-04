@@ -433,6 +433,168 @@ const translations = {
 
         remove:
             "Remove",
+
+            /* ================= CONTACT PAGE ================= */
+
+contactHeroSmallTitle:
+    "FEMORA BEAUTY",
+
+contactHeroTitle:
+    "Let's Talk",
+
+contactHeroTitleBeauty:
+    "Beauty.",
+
+contactHeroDescription:
+    "Have a question, need beauty advice, or simply want to say hello? We'd love to hear from you.",
+
+startConversation:
+    "Start A Conversation",
+
+
+/* ================= CONTACT INFORMATION ================= */
+
+getInTouch:
+    "GET IN TOUCH",
+
+contactHeading:
+    "We'd Love To Hear From You",
+
+contactDescription:
+    "Whether you have a question about our products, your order, or anything else, our team is ready to help.",
+
+
+/* ================= CONTACT DETAILS ================= */
+
+contactDetails:
+    "CONTACT DETAILS",
+
+reachOutFemora:
+    "Reach Out To Femora",
+
+contactDetailsDescription:
+    "Choose the easiest way to connect with us. We're always happy to help.",
+
+emailUs:
+    "Email Us",
+
+callUs:
+    "Call Us",
+
+visitUs:
+    "Visit Us",
+
+openingHours:
+    "Opening Hours",
+
+locationAddress:
+    "Haddah, Sana'a, Yemen",
+
+openingHoursTime:
+    "Sat - Thu | 9:00 AM - 8:00 PM",
+
+followFemora:
+    "FOLLOW FEMORA",
+
+
+/* ================= CONTACT FORM ================= */
+
+sendMessageSmall:
+    "SEND A MESSAGE",
+
+tellUsMind:
+    "Tell Us What's On Your Mind",
+
+contactFormDescription:
+    "Fill in the form below and our team will get back to you as soon as possible.",
+
+yourName:
+    "Your Name",
+
+yourNamePlaceholder:
+    "Enter your name",
+
+emailAddress:
+    "Email Address",
+
+emailPlaceholder:
+    "Enter your email",
+
+subject:
+    "Subject",
+
+subjectPlaceholder:
+    "What would you like to talk about?",
+
+yourMessage:
+    "Your Message",
+
+messagePlaceholder:
+    "Write your message here...",
+
+sendMessage:
+    "Send Message",
+
+sending:
+    "Sending...",
+
+messageSuccess:
+    "Thank you! Your message has been received.",
+
+messageError:
+    "Sorry, your message could not be sent. Please try again.",
+
+
+/* ================= CONTACT BENEFITS ================= */
+
+whyContactUs:
+    "WHY CONTACT US?",
+
+wereHereForYou:
+    "We're Here For You",
+
+friendlySupport:
+    "Friendly Support",
+
+friendlySupportDescription:
+    "Our team is always ready to answer your questions and help you choose.",
+
+beautyGuidance:
+    "Beauty Guidance",
+
+beautyGuidanceDescription:
+    "Need help finding the right product? We're happy to guide you.",
+
+weCare:
+    "We Care",
+
+weCareDescription:
+    "Every message matters to us because your beauty experience comes first.",
+
+quickResponse:
+    "Quick Response",
+
+quickResponseDescription:
+    "We do our best to respond to every message as quickly as possible.",
+
+
+/* ================= CONTACT CTA ================= */
+
+beautyJourneyStarts:
+    "YOUR BEAUTY JOURNEY STARTS HERE",
+
+haveQuestion:
+    "Have A Question?",
+
+makeItBeautiful:
+    "Let's Make It Beautiful.",
+
+contactCtaDescription:
+    "Explore our collection and discover products made to bring out your unique beauty.",
+
+exploreProducts:
+    "Explore Products",
+
         /* ================= FOOTER ================= */
 
         footerTagline:
@@ -878,6 +1040,168 @@ const translations = {
 
         remove:
             "إزالة",
+
+            /* ================= CONTACT PAGE ================= */
+
+contactHeroSmallTitle:
+    "فيمورا بيوتي",
+
+contactHeroTitle:
+    "لنتحدث عن",
+
+contactHeroTitleBeauty:
+    "الجمال.",
+
+contactHeroDescription:
+    "هل لديكِ سؤال، تحتاجين إلى نصيحة جمالية، أو ترغبين فقط في إلقاء التحية؟ يسعدنا أن نسمع منكِ.",
+
+startConversation:
+    "ابدئي المحادثة",
+
+
+/* ================= CONTACT INFORMATION ================= */
+
+getInTouch:
+    "تواصلي معنا",
+
+contactHeading:
+    "يسعدنا أن نسمع منكِ",
+
+contactDescription:
+    "سواء كان لديكِ سؤال حول منتجاتنا أو طلبكِ أو أي شيء آخر، فإن فريقنا جاهز لمساعدتكِ.",
+
+
+/* ================= CONTACT DETAILS ================= */
+
+contactDetails:
+    "معلومات التواصل",
+
+reachOutFemora:
+    "تواصلي مع فيمورا",
+
+contactDetailsDescription:
+    "اختاري الطريقة الأسهل للتواصل معنا، فنحن دائمًا سعداء بمساعدتكِ.",
+
+emailUs:
+    "راسلينا عبر البريد",
+
+callUs:
+    "اتصلي بنا",
+
+visitUs:
+    "زورينا",
+
+openingHours:
+    "ساعات العمل",
+
+locationAddress:
+    "حدة، صنعاء، اليمن",
+
+openingHoursTime:
+    "السبت - الخميس | 9:00 صباحًا - 8:00 مساءً",
+
+followFemora:
+    "تابعي فيمورا",
+
+
+/* ================= CONTACT FORM ================= */
+
+sendMessageSmall:
+    "أرسلي رسالة",
+
+tellUsMind:
+    "أخبرينا بما يدور في بالكِ",
+
+contactFormDescription:
+    "املئي النموذج أدناه وسيتواصل معكِ فريقنا في أقرب وقت ممكن.",
+
+yourName:
+    "اسمكِ",
+
+yourNamePlaceholder:
+    "أدخلي اسمكِ",
+
+emailAddress:
+    "البريد الإلكتروني",
+
+emailPlaceholder:
+    "أدخلي بريدكِ الإلكتروني",
+
+subject:
+    "الموضوع",
+
+subjectPlaceholder:
+    "ما الذي ترغبين في التحدث عنه؟",
+
+yourMessage:
+    "رسالتكِ",
+
+messagePlaceholder:
+    "اكتبي رسالتكِ هنا...",
+
+sendMessage:
+    "إرسال الرسالة",
+
+sending:
+    "جارٍ الإرسال...",
+
+messageSuccess:
+    "شكرًا لكِ! تم استلام رسالتكِ بنجاح.",
+
+messageError:
+    "عذرًا، تعذر إرسال رسالتكِ. يرجى المحاولة مرة أخرى.",
+
+
+/* ================= CONTACT BENEFITS ================= */
+
+whyContactUs:
+    "لماذا تتواصلين معنا؟",
+
+wereHereForYou:
+    "نحن هنا من أجلكِ",
+
+friendlySupport:
+    "دعم ودود",
+
+friendlySupportDescription:
+    "فريقنا دائمًا جاهز للإجابة عن أسئلتكِ ومساعدتكِ في الاختيار.",
+
+beautyGuidance:
+    "إرشادات جمالية",
+
+beautyGuidanceDescription:
+    "تحتاجين مساعدة في العثور على المنتج المناسب؟ يسعدنا إرشادكِ.",
+
+weCare:
+    "نحن نهتم",
+
+weCareDescription:
+    "كل رسالة تهمنا لأن تجربتكِ الجمالية تأتي دائمًا في المقام الأول.",
+
+quickResponse:
+    "استجابة سريعة",
+
+quickResponseDescription:
+    "نبذل قصارى جهدنا للرد على كل رسالة بأسرع وقت ممكن.",
+
+
+/* ================= CONTACT CTA ================= */
+
+beautyJourneyStarts:
+    "رحلة جمالكِ تبدأ هنا",
+
+haveQuestion:
+    "هل لديكِ سؤال؟",
+
+makeItBeautiful:
+    "لنجعلها أكثر جمالًا.",
+
+contactCtaDescription:
+    "استكشفي مجموعتنا واكتشفي منتجات مصممة لإبراز جمالكِ الفريد.",
+
+exploreProducts:
+    "استكشفي المنتجات",
+    
         /* ================= FOOTER ================= */
 
         footerTagline:
