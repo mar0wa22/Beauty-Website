@@ -166,11 +166,10 @@ nav {
 
 
 .header__image img {
-  padding: 0 20px;
+  display: block;
   width: 100%;
-  max-width: 800px;
-  margin-inline: auto;
-  top: 2;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 
