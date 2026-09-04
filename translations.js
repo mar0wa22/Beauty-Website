@@ -39,9 +39,10 @@ const translations = {
 
 
         /* ================= ABOUT ================= */
-
+        aboutTitle:
+            "about",
         aboutBrand:
-            "About Femora Beauty",
+            " Femora Beauty",
 
         aboutDescription1:
             "✨ Welcome to Femora Beauty, where luxury meets everyday elegance. We bring together a handpicked selection of top-tier makeup and radiant skincare from world-class brands designed to care for your skin and highlight your personal flair.",
@@ -482,9 +483,10 @@ const translations = {
 
 
         /* ================= ABOUT ================= */
-
+        aboutTitle:
+            "عن",
         aboutBrand:
-            "عن فيمورا بيوتي",
+            " فيمورا بيوتي",
 
         aboutDescription1:
             "✨ مرحبًا بكِ في فيمورا بيوتي، حيث تلتقي الفخامة بالأناقة اليومية. نقدم لكِ مجموعة مختارة بعناية من أفضل منتجات المكياج والعناية بالبشرة من علامات تجارية عالمية، لتمنح بشرتكِ العناية التي تستحقها وتبرز جمالكِ بأسلوبكِ الخاص.",
