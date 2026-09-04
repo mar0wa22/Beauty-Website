@@ -40,7 +40,7 @@ const translations = {
 
         /* ================= ABOUT ================= */
         aboutTitle:
-            "about",
+            "About",
         aboutBrand:
             " Femora Beauty",
 
