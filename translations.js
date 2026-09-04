@@ -588,6 +588,8 @@ makeBeautiful:
 contactCtaDescription:
     "Explore our collection and discover products made to bring out your unique beauty.",
 
+exploreProducts:
+            " exploreProducts",
         /* ================= FOOTER ================= */
 
         footerTagline:
@@ -1189,6 +1191,8 @@ makeBeautiful:
 contactCtaDescription:
     "استكشفي مجموعتنا واكتشفي منتجات مصممة لإبراز جمالكِ الفريد.",
 
+exploreProducts:
+            "استكشفي المنتجات",
         /* ================= FOOTER ================= */
 
         footerTagline:
