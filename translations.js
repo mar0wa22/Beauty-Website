@@ -1304,23 +1304,19 @@ function translatePage() {
 
 function toggleLanguage() {
 
-
     currentLanguage =
         currentLanguage === "en"
             ? "ar"
             : "en";
 
-
     localStorage.setItem(
-
         "femoraLanguage",
-
         currentLanguage
-
     );
 
-
     translatePage();
+
+    displayCart();
 
 }
 
