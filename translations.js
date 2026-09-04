@@ -40,7 +40,7 @@ const translations = {
 
         /* ================= ABOUT ================= */
 
-        aboutFemora:
+        aboutBrand:
             "About Femora Beauty",
 
         aboutDescription1:
@@ -483,7 +483,7 @@ const translations = {
 
         /* ================= ABOUT ================= */
 
-        aboutFemora:
+        aboutBrand:
             "عن فيمورا بيوتي",
 
         aboutDescription1:
