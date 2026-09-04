@@ -184,7 +184,7 @@ nav {
 }
 
 .header__content h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 4rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -230,7 +230,7 @@ nav {
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-dark);
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
 }
 
 .header__content input::placeholder {
