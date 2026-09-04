@@ -208,7 +208,7 @@ nav {
   flex: 1;
   display: grid;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .header__content label {
