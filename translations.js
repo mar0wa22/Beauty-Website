@@ -1,34 +1,23 @@
 /* =========================================
-   FEMORA BEAUTY
-   LANGUAGE SYSTEM
+   FEMORA BEAUTY - LANGUAGE SYSTEM
    English / Arabic
 ========================================= */
 
-
 const translations = {
-
-    /* =====================================
-       ENGLISH
-    ===================================== */
 
     en: {
 
-        /* NAVBAR */
+        /* ================= NAVBAR ================= */
 
         home: "Home",
-
         about: "About",
-
         products: "Products",
-
         contact: "Contact Us",
-
         shopNow: "Shop Now",
-
         language: "AR",
 
 
-        /* HOME */
+        /* ================= HOME ================= */
 
         homeTitle:
             "Discover the Beauty within you",
@@ -46,16 +35,13 @@ const translations = {
             "Opening Date",
 
         datePlaceholder:
-            "3th, March 2024",
+            "3rd, March 2024",
 
 
-        /* ABOUT */
+        /* ================= ABOUT ================= */
 
-        aboutTitle:
-            "About",
-
-        aboutBrand:
-            "Femora Beauty",
+        aboutFemora:
+            "About Femora Beauty",
 
         aboutDescription1:
             "✨ Welcome to Femora Beauty, where luxury meets everyday elegance. We bring together a handpicked selection of top-tier makeup and radiant skincare from world-class brands designed to care for your skin and highlight your personal flair.",
@@ -66,34 +52,26 @@ const translations = {
         exploreMore:
             "Explore More",
 
-
-        /* WHY FEMORA */
-
         whyChooseUs:
             "WHY CHOOSE US",
 
         beautyMadeForYou:
             "Beauty Made For You",
 
-        whyDescription:
+        whyFemoraDescription:
             "At Femora Beauty, we believe that beauty is unique to everyone. We bring you carefully selected products to help you express your style with confidence.",
-
-
-        /* FEATURES */
 
         premiumQuality:
             "Premium Quality",
 
-        premiumQualityDescription:
+        premiumQualityShort:
             "Carefully selected beauty products.",
-
 
         latestTrends:
             "Latest Trends",
 
-        latestTrendsDescription:
+        latestTrendsShort:
             "Discover the newest beauty trends.",
-
 
         madeWithLove:
             "Made With Love",
@@ -101,43 +79,222 @@ const translations = {
         madeWithLoveDescription:
             "Everything you need in one place.",
 
-
-        /* BACK */
-
         backToAbout:
-            "Back to About"
+            "Back to About",
+
+
+        /* ================= PRODUCTS HERO ================= */
+
+        productsHeroSmallTitle:
+            "FEMORA BEAUTY COLLECTION",
+
+        productsHeroTitle:
+            "Discover Your",
+
+        productsHeroTitleBeauty:
+            "Beauty",
+
+        productsHeroDescription:
+            "Explore our carefully selected collection of premium makeup and skincare products designed to make every beauty moment special.",
+
+        exploreProducts:
+            "Explore Products",
+
+        viewCategories:
+            "View Categories",
+
+
+        /* ================= CATEGORIES ================= */
+
+        shopByCategory:
+            "SHOP BY CATEGORY",
+
+        findBeautyEssentials:
+            "Find Your Beauty Essentials",
+
+        beautyRoutineDescription:
+            "Everything you need to create your perfect beauty routine.",
+
+        makeup:
+            "Makeup",
+
+        skincare:
+            "Skincare",
+
+        lips:
+            "Lips",
+
+        eyes:
+            "Eyes",
+
+        face:
+            "Face",
+
+        fragrance:
+            "Fragrance",
+
+        makeupDescription:
+            "Discover your perfect look.",
+
+        skincareDescription:
+            "Care for your skin every day.",
+
+        lipsDescription:
+            "Add color and confidence.",
+
+        eyesDescription:
+            "Make every look unforgettable.",
+
+        faceDescription:
+            "Create your perfect finish.",
+
+        fragranceDescription:
+            "Find your signature scent.",
+
+        explore:
+            "Explore",
+
+
+        /* ================= FEATURED PRODUCTS ================= */
+
+        femoraCollection:
+            "FEMORA COLLECTION",
+
+        beautyFavorites:
+            "Our Beauty Favorites",
+
+        beautyFavoritesDescription:
+            "Discover our complete collection of beauty essentials and find your perfect match.",
+
+        all:
+            "All",
+
+        new:
+            "NEW",
+
+        best:
+            "BEST",
+
+        add:
+            "Add",
+
+
+        /* ================= PRODUCT NAMES ================= */
+
+        productLuxuryFoundation:
+            "Luxury Foundation",
+
+        productRoseVelvetLipstick:
+            "Rose Velvet Lipstick",
+
+        productRadiantGlowSerum:
+            "Radiant Glow Serum",
+
+        productSoftGlamPalette:
+            "Soft Glam Palette",
+
+        productRoseGlowBlush:
+            "Rose Glow Blush",
+
+        productVolumeMascara:
+            "Volume Mascara",
+
+        productDailyMoisturizer:
+            "Daily Moisturizer",
+
+        productFemoraSignature:
+            "Femora Signature",
+
+        productFemoraRosePerfume:
+            "Femora Rose Perfume",
+
+        productRedGlowBlush:
+            "Red Glow Blush",
+
+        productNeimanMarcurs:
+            "Neiman Marcurs",
+
+        productRedVelvetLipstick:
+            "Red Velvet Lipstick",
+
+        productPowderFoundation:
+            "Powder Foundation",
+
+
+        /* ================= BEAUTY OFFER ================= */
+
+        specialFemoraOffer:
+            "SPECIAL FEMORA OFFER",
+
+        yourBeauty:
+            "Your Beauty,",
+
+        yourConfidence:
+            "Your Confidence.",
+
+        beautyOfferDescription:
+            "Treat yourself to something beautiful. Discover selected products and enjoy an elegant beauty experience made just for you.",
+
+        exploreCollection:
+            "Explore Collection",
+
+
+        /* ================= PRODUCTS BENEFITS ================= */
+
+        femoraExperience:
+            "THE FEMORA EXPERIENCE",
+
+        beautyMadeWithCare:
+            "Beauty Made With Care",
+
+        premiumQualityDescription:
+            "Carefully selected products from trusted beauty brands.",
+
+        beautyForEveryone:
+            "Beauty For Everyone",
+
+        beautyForEveryoneDescription:
+            "Products designed to celebrate every unique style.",
+
+        latestTrendsDescription:
+            "Discover modern beauty essentials and the latest trends.",
+
+        everythingOnePlace:
+            "Everything In One Place",
+
+        everythingOnePlaceDescription:
+            "Makeup and skincare made easy to discover.",
+
+
+        /* ================= FOOTER ================= */
+
+        footerTagline:
+            "Discover the beauty within you.",
+
+        copyright:
+            "© 2026 Femora Beauty. All Rights Reserved."
 
     },
 
 
-    /* =====================================
+
+    /* =========================================
        ARABIC
-    ===================================== */
+    ========================================= */
 
     ar: {
 
-        /* NAVBAR */
+        /* ================= NAVBAR ================= */
 
-        home:
-            "الرئيسية",
-
-        about:
-            "من نحن",
-
-        products:
-            "المنتجات",
-
-        contact:
-            "تواصل معنا",
-
-        shopNow:
-            "تسوقي الآن",
-
-        language:
-            "EN",
+        home: "الرئيسية",
+        about: "من نحن",
+        products: "المنتجات",
+        contact: "تواصل معنا",
+        shopNow: "تسوقي الآن",
+        language: "EN",
 
 
-        /* HOME */
+        /* ================= HOME ================= */
 
         homeTitle:
             "اكتشفي الجمال بداخلك",
@@ -158,16 +315,13 @@ const translations = {
             "3 مارس 2024",
 
 
-        /* ABOUT */
+        /* ================= ABOUT ================= */
 
-        aboutTitle:
-            "عن",
-
-        aboutBrand:
-            "فيمورا بيوتي",
+        aboutFemora:
+            "عن فيمورا بيوتي",
 
         aboutDescription1:
-            "✨ مرحبًا بكِ في فيمورا بيوتي، حيث تلتقي الفخامة بالأناقة اليومية. نقدم لكِ مجموعة مختارة بعناية من أفضل منتجات المكياج والعناية بالبشرة المشرقة من علامات تجارية عالمية، صُممت للعناية ببشرتك وإبراز جمالك وأسلوبك الخاص.",
+            "✨ مرحبًا بكِ في فيمورا بيوتي، حيث تلتقي الفخامة بالأناقة اليومية. نقدم لكِ مجموعة مختارة بعناية من أفضل منتجات المكياج والعناية بالبشرة من علامات تجارية عالمية، لتمنح بشرتكِ العناية التي تستحقها وتبرز جمالكِ بأسلوبكِ الخاص.",
 
         aboutDescription2:
             "✨ تقدم فيمورا بيوتي مجموعة من منتجات المكياج والعناية بالبشرة الفاخرة، تم اختيارها بعناية من علامات تجارية موثوقة حول العالم.",
@@ -175,34 +329,26 @@ const translations = {
         exploreMore:
             "اكتشفي المزيد",
 
-
-        /* WHY FEMORA */
-
         whyChooseUs:
             "لماذا تختاريننا؟",
 
         beautyMadeForYou:
-            "جمال صُمم من أجلكِ",
+            "جمال صُنع من أجلكِ",
 
-        whyDescription:
-            "في فيمورا بيوتي، نؤمن بأن الجمال يختلف من شخص لآخر. لذلك نقدم لكِ منتجات مختارة بعناية تساعدكِ على التعبير عن أسلوبكِ بثقة.",
-
-
-        /* FEATURES */
+        whyFemoraDescription:
+            "في فيمورا بيوتي، نؤمن أن الجمال فريد لكل شخص. لذلك نقدم لكِ منتجات مختارة بعناية تساعدكِ على التعبير عن أسلوبكِ بثقة.",
 
         premiumQuality:
-            "جودة فاخرة",
+            "جودة فائقة",
 
-        premiumQualityDescription:
+        premiumQualityShort:
             "منتجات تجميل مختارة بعناية.",
 
-
         latestTrends:
-            "أحدث صيحات الجمال",
+            "أحدث الصيحات",
 
-        latestTrendsDescription:
-            "اكتشفي أحدث اتجاهات الجمال.",
-
+        latestTrendsShort:
+            "اكتشفي أحدث صيحات الجمال.",
 
         madeWithLove:
             "صُنع بحب",
@@ -210,11 +356,200 @@ const translations = {
         madeWithLoveDescription:
             "كل ما تحتاجينه في مكان واحد.",
 
-
-        /* BACK */
-
         backToAbout:
-            "العودة إلى من نحن"
+            "العودة إلى الأعلى",
+
+
+        /* ================= PRODUCTS HERO ================= */
+
+        productsHeroSmallTitle:
+            "مجموعة فيمورا بيوتي",
+
+        productsHeroTitle:
+            "اكتشفي",
+
+        productsHeroTitleBeauty:
+            "جمالكِ",
+
+        productsHeroDescription:
+            "استكشفي مجموعتنا المختارة بعناية من منتجات المكياج والعناية بالبشرة الفاخرة، المصممة لتجعل كل لحظة جمال مميزة.",
+
+        exploreProducts:
+            "استكشفي المنتجات",
+
+        viewCategories:
+            "عرض الأقسام",
+
+
+        /* ================= CATEGORIES ================= */
+
+        shopByCategory:
+            "تسوقي حسب القسم",
+
+        findBeautyEssentials:
+            "اكتشفي أساسيات جمالكِ",
+
+        beautyRoutineDescription:
+            "كل ما تحتاجينه للحصول على روتين الجمال المثالي.",
+
+        makeup:
+            "مكياج",
+
+        skincare:
+            "العناية بالبشرة",
+
+        lips:
+            "الشفاه",
+
+        eyes:
+            "العيون",
+
+        face:
+            "الوجه",
+
+        fragrance:
+            "العطور",
+
+        makeupDescription:
+            "اكتشفي إطلالتكِ المثالية.",
+
+        skincareDescription:
+            "اعتني ببشرتكِ كل يوم.",
+
+        lipsDescription:
+            "أضيفي اللون والثقة.",
+
+        eyesDescription:
+            "اجعلي كل نظرة لا تُنسى.",
+
+        faceDescription:
+            "احصلي على اللمسة النهائية المثالية.",
+
+        fragranceDescription:
+            "اكتشفي عطركِ المميز.",
+
+        explore:
+            "استكشفي",
+
+
+        /* ================= FEATURED PRODUCTS ================= */
+
+        femoraCollection:
+            "مجموعة فيمورا",
+
+        beautyFavorites:
+            "منتجاتنا المفضلة",
+
+        beautyFavoritesDescription:
+            "اكتشفي مجموعتنا الكاملة من أساسيات الجمال واعثري على ما يناسبكِ.",
+
+        all:
+            "الكل",
+
+        new:
+            "جديد",
+
+        best:
+            "الأفضل",
+
+        add:
+            "أضيفي",
+
+
+        /* ================= PRODUCT NAMES ================= */
+
+        productLuxuryFoundation:
+            "كريم أساس فاخر",
+
+        productRoseVelvetLipstick:
+            "أحمر شفاه روز فيلفت",
+
+        productRadiantGlowSerum:
+            "سيروم الإشراقة المتألقة",
+
+        productSoftGlamPalette:
+            "باليت سوفت جلام",
+
+        productRoseGlowBlush:
+            "بلاشر روز جلو",
+
+        productVolumeMascara:
+            "ماسكارا تكثيف الرموش",
+
+        productDailyMoisturizer:
+            "مرطب يومي",
+
+        productFemoraSignature:
+            "فيمورا سيجنتشر",
+
+        productFemoraRosePerfume:
+            "عطر فيمورا روز",
+
+        productRedGlowBlush:
+            "بلاشر ريد جلو",
+
+        productNeimanMarcurs:
+            "نييمان ماركورس",
+
+        productRedVelvetLipstick:
+            "أحمر شفاه ريد فيلفت",
+
+        productPowderFoundation:
+            "بودرة أساس",
+
+
+        /* ================= BEAUTY OFFER ================= */
+
+        specialFemoraOffer:
+            "عرض فيمورا المميز",
+
+        yourBeauty:
+            "جمالكِ،",
+
+        yourConfidence:
+            "ثقتكِ.",
+
+        beautyOfferDescription:
+            "دللي نفسكِ بشيء جميل. اكتشفي منتجات مختارة واستمتعي بتجربة جمال أنيقة صُممت خصيصًا من أجلكِ.",
+
+        exploreCollection:
+            "استكشفي المجموعة",
+
+
+        /* ================= PRODUCTS BENEFITS ================= */
+
+        femoraExperience:
+            "تجربة فيمورا",
+
+        beautyMadeWithCare:
+            "جمال صُنع بعناية",
+
+        premiumQualityDescription:
+            "منتجات مختارة بعناية من علامات تجميل موثوقة.",
+
+        beautyForEveryone:
+            "الجمال للجميع",
+
+        beautyForEveryoneDescription:
+            "منتجات مصممة للاحتفال بكل أسلوب فريد.",
+
+        latestTrendsDescription:
+            "اكتشفي أساسيات الجمال العصرية وأحدث الصيحات.",
+
+        everythingOnePlace:
+            "كل شيء في مكان واحد",
+
+        everythingOnePlaceDescription:
+            "اكتشفي المكياج والعناية بالبشرة بسهولة.",
+
+
+        /* ================= FOOTER ================= */
+
+        footerTagline:
+            "اكتشفي الجمال بداخلكِ.",
+
+        copyright:
+            "© 2026 فيمورا بيوتي. جميع الحقوق محفوظة."
 
     }
 
@@ -230,20 +565,18 @@ let currentLanguage =
 
 
 /* =========================================
-   TRANSLATE PAGE
+   TRANSLATE ELEMENTS
 ========================================= */
 
 function translatePage() {
 
-    /* ==============================
-       NORMAL TEXT
-    ============================== */
 
     const elements =
         document.querySelectorAll("[data-i18n]");
 
 
     elements.forEach(element => {
+
 
         const key =
             element.getAttribute("data-i18n");
@@ -262,9 +595,8 @@ function translatePage() {
     });
 
 
-    /* ==============================
-       PLACEHOLDERS
-    ============================== */
+
+    /* ================= PLACEHOLDERS ================= */
 
     const placeholderElements =
         document.querySelectorAll(
@@ -273,6 +605,7 @@ function translatePage() {
 
 
     placeholderElements.forEach(element => {
+
 
         const key =
             element.getAttribute(
@@ -293,17 +626,12 @@ function translatePage() {
     });
 
 
-    /* ==============================
-       HTML LANGUAGE
-    ============================== */
+
+    /* ================= HTML LANGUAGE ================= */
 
     document.documentElement.lang =
         currentLanguage;
 
-
-    /* ==============================
-       RTL / LTR
-    ============================== */
 
     document.documentElement.dir =
         currentLanguage === "ar"
@@ -311,9 +639,8 @@ function translatePage() {
             : "ltr";
 
 
-    /* ==============================
-       LANGUAGE BUTTON
-    ============================== */
+
+    /* ================= LANGUAGE BUTTON ================= */
 
     const languageButton =
         document.getElementById(
@@ -337,21 +664,21 @@ function translatePage() {
 
 function toggleLanguage() {
 
+
     currentLanguage =
         currentLanguage === "en"
             ? "ar"
             : "en";
 
 
-    /* Save language */
-
     localStorage.setItem(
+
         "femoraLanguage",
+
         currentLanguage
+
     );
 
-
-    /* Translate current page */
 
     translatePage();
 
@@ -363,10 +690,13 @@ function toggleLanguage() {
 ========================================= */
 
 document.addEventListener(
+
     "DOMContentLoaded",
+
     () => {
 
         translatePage();
 
     }
+
 );
