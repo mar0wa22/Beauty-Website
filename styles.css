@@ -3479,14 +3479,14 @@ body {
 
 
     /* ---------- Decorative Background ---------- */
-/* --- Decorative Background --- */
+
 .header__container .decore {
     width: 100%;
     height: 100%;
     overflow: hidden;
     
     /* 1. أضيفي هذا السطر لاختيار لون وردي جميل */
-    background-color: #ffe4e8; /* هذا لون وردي فاتح وناعم، يمكنك تغييره إذا أردتِ */
+    background-color: #fcd5db; /* هذا لون وردي فاتح وناعم، يمكنك تغييره إذا أردتِ */
 }
 
 .decore img {
