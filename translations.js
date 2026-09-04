@@ -41,7 +41,7 @@ const translations = {
         /* ================= ABOUT ================= */
 
         aboutFemora:
-            " Femora Beauty",
+            "About Femora Beauty",
 
         aboutDescription1:
             "✨ Welcome to Femora Beauty, where luxury meets everyday elegance. We bring together a handpicked selection of top-tier makeup and radiant skincare from world-class brands designed to care for your skin and highlight your personal flair.",
@@ -707,7 +707,7 @@ const translations = {
 
         everythingOnePlaceDescription:
             "اكتشفي المكياج والعناية بالبشرة بسهولة.",
-
+            
         /* ================= CART ================= */
 
         favorites:
