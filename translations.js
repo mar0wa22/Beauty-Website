@@ -1095,7 +1095,7 @@ openingHours:
     "ساعات العمل",
 
 locationAddress:
-    "حدة، صنعاء، اليمن",
+    "اليمن صنعاء، حدة المدينة",
 
 openingHoursTime:
     "السبت - الخميس | 9:00 صباحًا - 8:00 مساءً",
@@ -1201,7 +1201,7 @@ contactCtaDescription:
 
 exploreProducts:
     "استكشفي المنتجات",
-    
+
         /* ================= FOOTER ================= */
 
         footerTagline:
