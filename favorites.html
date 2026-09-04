@@ -220,351 +220,243 @@
 
 </section>
 
-
+<script src="translations.js"></script>
 
 <script>
 
+    /* =========================================
+       GET FAVORITES
+    ========================================= */
 
-/* =========================================
-   GET FAVORITES
-========================================= */
-
-let favorites =
-    JSON.parse(
-        localStorage.getItem("femoraFavorites")
-    ) || [];
-
-
-const favoritesContainer =
-    document.getElementById(
-        "favorites-container"
-    );
+    let favorites =
+        JSON.parse(
+            localStorage.getItem("femoraFavorites")
+        ) || [];
 
 
-
-/* =========================================
-   DISPLAY FAVORITES
-========================================= */
-
-function displayFavorites() {
+    const favoritesContainer =
+        document.getElementById(
+            "favorites-container"
+        );
 
 
-    favoritesContainer.innerHTML = "";
+    /* =========================================
+       DISPLAY FAVORITES
+    ========================================= */
 
+    function displayFavorites() {
 
-    /* ==============================
-       NO FAVORITES
-    ============================== */
-
-    if (favorites.length === 0) {
-
+        favoritesContainer.innerHTML = "";
 
         const t =
             translations[currentLanguage];
 
 
-        favoritesContainer.innerHTML = `
+        if (favorites.length === 0) {
 
-            <div class="empty-favorites">
+            favoritesContainer.innerHTML = `
 
-                <i class="ri-heart-3-line"></i>
+                <div class="empty-favorites">
 
+                    <i class="ri-heart-3-line"></i>
 
-                <h2>
+                    <h2>
+                        ${t.noFavoritesYet}
+                    </h2>
 
-                    ${t.noFavoritesYet}
+                    <p>
+                        ${t.noFavoritesDescription}
+                    </p>
 
-                </h2>
+                    <a href="products.html">
 
+                        ${t.exploreProducts}
 
-                <p>
+                        <i class="ri-arrow-right-line"></i>
 
-                    ${t.noFavoritesDescription}
+                    </a>
 
-                </p>
+                </div>
 
+            `;
 
-                <a href="products.html">
-
-                    ${t.exploreProducts}
-
-                    <i class="ri-arrow-right-line"></i>
-
-                </a>
-
-            </div>
-
-        `;
+            return;
+        }
 
 
-        return;
+        favorites.forEach((product, index) => {
+
+            const card =
+                document.createElement("div");
+
+            card.className =
+                "favorite-card";
+
+
+            card.innerHTML = `
+
+                <div class="favorite-image">
+
+                    <img
+                        src="${product.image}"
+                        alt="${product.name}"
+                        onerror="this.src='images/1.png'"
+                    >
+
+                    <button
+                        class="remove-favorite"
+                        data-index="${index}"
+                        title="${t.removeFromFavorites}">
+
+                        <i class="ri-heart-fill"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="favorite-info">
+
+                    <span>
+                        ${t.femoraBeauty}
+                    </span>
+
+                    <h3>
+                        ${product.name}
+                    </h3>
+
+                    <strong>
+                        $${product.price}.00
+                    </strong>
+
+                    <button
+                        class="remove-button"
+                        data-index="${index}">
+
+                        <i class="ri-delete-bin-line"></i>
+
+                        ${t.remove}
+
+                    </button>
+
+                </div>
+
+            `;
+
+
+            favoritesContainer.appendChild(card);
+
+        });
+
+
+        /* REMOVE HEART */
+
+        document
+            .querySelectorAll(".remove-favorite")
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        const index =
+                            Number(this.dataset.index);
+
+                        favorites.splice(index, 1);
+
+                        localStorage.setItem(
+                            "femoraFavorites",
+                            JSON.stringify(favorites)
+                        );
+
+                        displayFavorites();
+
+                    }
+                );
+
+            });
+
+
+        /* REMOVE BUTTON */
+
+        document
+            .querySelectorAll(".remove-button")
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        const index =
+                            Number(this.dataset.index);
+
+                        favorites.splice(index, 1);
+
+                        localStorage.setItem(
+                            "femoraFavorites",
+                            JSON.stringify(favorites)
+                        );
+
+                        displayFavorites();
+
+                    }
+                );
+
+            });
 
     }
 
 
+    /* =========================================
+       MOBILE MENU
+    ========================================= */
 
-    /* ==============================
-       DISPLAY PRODUCTS
-    ============================== */
+    const menuBtn =
+        document.getElementById("menu-btn");
 
-    favorites.forEach((product, index) => {
+    const navLinks =
+        document.getElementById("nav-links");
 
 
-        const t =
-            translations[currentLanguage];
+    if (menuBtn && navLinks) {
 
+        menuBtn.addEventListener(
+            "click",
+            () => {
 
-        const card =
-            document.createElement("div");
+                navLinks.classList.toggle("open");
 
+            }
+        );
 
-        card.className =
-            "favorite-card";
+    }
 
 
+    /* =========================================
+       START
+    ========================================= */
 
-        card.innerHTML = `
+    displayFavorites();
 
-            <div class="favorite-image">
 
+    /* =========================================
+       LANGUAGE CHANGE
+    ========================================= */
 
-                <img
+    const originalToggleLanguage =
+        window.toggleLanguage;
 
-                    src="${product.image}"
 
-                    alt="${product.name}"
+    window.toggleLanguage =
+        function () {
 
-                    onerror="this.src='images/1.png'"
+            originalToggleLanguage();
 
-                >
+            displayFavorites();
 
-
-
-                <button
-
-                    class="remove-favorite"
-
-                    data-index="${index}"
-
-                    title="${t.removeFromFavorites}"
-
-                >
-
-                    <i class="ri-heart-fill"></i>
-
-                </button>
-
-
-            </div>
-
-
-
-            <div class="favorite-info">
-
-
-                <span>
-
-                    ${t.femoraBeauty}
-
-                </span>
-
-
-                <h3>
-
-                    ${product.name}
-
-                </h3>
-
-
-                <strong>
-
-                    $${product.price}.00
-
-                </strong>
-
-
-
-                <button
-
-                    class="remove-button"
-
-                    data-index="${index}"
-
-                >
-
-                    <i class="ri-delete-bin-line"></i>
-
-
-                    ${t.remove}
-
-                </button>
-
-
-            </div>
-
-        `;
-
-
-        favoritesContainer.appendChild(card);
-
-
-    });
-
-
-
-    /* =================================
-       REMOVE USING HEART
-    ================================= */
-
-    document
-        .querySelectorAll(".remove-favorite")
-        .forEach(button => {
-
-
-            button.addEventListener(
-                "click",
-                function () {
-
-
-                    const index =
-                        Number(
-                            this.dataset.index
-                        );
-
-
-                    favorites.splice(index, 1);
-
-
-                    localStorage.setItem(
-
-                        "femoraFavorites",
-
-                        JSON.stringify(favorites)
-
-                    );
-
-
-                    displayFavorites();
-
-
-                }
-            );
-
-
-        });
-
-
-
-    /* =================================
-       REMOVE USING DELETE BUTTON
-    ================================= */
-
-    document
-        .querySelectorAll(".remove-button")
-        .forEach(button => {
-
-
-            button.addEventListener(
-                "click",
-                function () {
-
-
-                    const index =
-                        Number(
-                            this.dataset.index
-                        );
-
-
-                    favorites.splice(index, 1);
-
-
-                    localStorage.setItem(
-
-                        "femoraFavorites",
-
-                        JSON.stringify(favorites)
-
-                    );
-
-
-                    displayFavorites();
-
-
-                }
-            );
-
-
-        });
-
-
-}
-
-
-
-/* =========================================
-   START
-========================================= */
-
-displayFavorites();
-
-
-
-/* =========================================
-   MOBILE MENU
-========================================= */
-
-const menuBtn =
-    document.getElementById("menu-btn");
-
-
-const navLinks =
-    document.getElementById("nav-links");
-
-
-if (menuBtn) {
-
-    menuBtn.addEventListener(
-
-        "click",
-
-        () => {
-
-            navLinks.classList.toggle("open");
-
-        }
-
-    );
-
-}
-
-
-
-/* =========================================
-   UPDATE FAVORITES WHEN LANGUAGE CHANGES
-========================================= */
-
-const originalToggleLanguage =
-    toggleLanguage;
-
-
-window.toggleLanguage =
-    function () {
-
-
-        originalToggleLanguage();
-
-
-        displayFavorites();
-
-
-    };
-
+        };
 
 </script>
-
-
-<script src="translations.js"></script>
-
 </body>
 
 </html>
