@@ -707,6 +707,7 @@ const translations = {
 
         everythingOnePlaceDescription:
             "اكتشفي المكياج والعناية بالبشرة بسهولة.",
+            
         /* ================= CART ================= */
 
         favorites:
@@ -853,7 +854,7 @@ const translations = {
             "جمالكِ",
 
         favoritesTitle:
-            "المفضلة",
+            "المفضل",
 
         favoritesDescription:
             "المنتجات التي تحبينها وترغبين بالاحتفاظ بها دائمًا.",
