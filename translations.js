@@ -14,6 +14,7 @@ const translations = {
         products: "Products",
         contact: "Contact Us",
         favorites: "Favorites",
+        cart: "Cart",
         shopNow: "Shop Now",
         language: "AR",
 
@@ -608,7 +609,9 @@ contactCtaDescription:
         products: "المنتجات",
         contact: "تواصل معنا",
         favorites: "المفضلة",
+        cart: "السلة",
         shopNow: "تسوقي الآن",
+    
         language: "EN",
 
 
