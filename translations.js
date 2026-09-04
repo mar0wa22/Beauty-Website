@@ -421,10 +421,7 @@ const translations = {
 
         noFavoritesDescription:
             "You haven't added any products to your favorites yet.",
-
-        exploreProducts:
-            "Explore Products",
-
+            
         femoraBeauty:
             "FEMORA BEAUTY",
 
@@ -588,8 +585,6 @@ makeBeautiful:
 contactCtaDescription:
     "Explore our collection and discover products made to bring out your unique beauty.",
 
-exploreProducts:
-            " exploreProducts",
         /* ================= FOOTER ================= */
 
         footerTagline:
@@ -1024,9 +1019,6 @@ exploreProducts:
         noFavoritesDescription:
             "لم تقومي بإضافة أي منتجات إلى المفضلة حتى الآن.",
 
-        exploreProducts:
-            "استكشفي المنتجات",
-
         femoraBeauty:
             "فيمورا بيوتي",
 
@@ -1191,8 +1183,6 @@ makeBeautiful:
 contactCtaDescription:
     "استكشفي مجموعتنا واكتشفي منتجات مصممة لإبراز جمالكِ الفريد.",
 
-exploreProducts:
-            "استكشفي المنتجات",
         /* ================= FOOTER ================= */
 
         footerTagline:
