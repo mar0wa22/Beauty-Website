@@ -162,6 +162,7 @@ nav {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: contrast(120%) brightness(90%) saturate(130%);
 }
 
 
